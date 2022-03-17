@@ -18,7 +18,7 @@ bHeliocentric	= 0		# use "heliocentric" reference frame?
 dCentMass	= 2.5		# central mass in helio (or PATCH) frame (M_Sun)
 bFandG		= 0		# use Gauss' F & G function (Kepler) drift?
 achDataSubPath	= .		# extension to PTOOLS_DATA_PATH, if used
-achInFile	= in_file.ss	# initial conditions file
+achInFile	= cometcrash.ss	# initial conditions file
 achOutName	= out_file		# output file prefix
 dExtraStore	= 0.1		# fractional extra storage per processor
 bStandard	= 0		# use old Tipsy I/O format if applicable
@@ -58,7 +58,7 @@ bEwald		= 0		# apply Ewald correction?
 #
 # General COLLISIONS-specific parameters...
 #
-nSmooth		= 400		# neighbors to check for collision (1 disables)
+nSmooth		= 16		# neighbors to check for collision (1 disables)
 dEpsN		= 0.8		# normal restitution coefficient (1=elastic)
 dEpsT		= 1.0		# tangential restitution coefficient (1=smooth)
 #
