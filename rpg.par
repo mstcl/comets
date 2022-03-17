@@ -2,23 +2,59 @@
 # =======
 #
 # Rubble pile parameters...
+# MUST specify one of: 
 #
-# MUST specify one of: bulk semi-axes OR BOTH number of particles AND particle
-# radius; bulk density OR particle density; number of particles OR particle
-# radius. Missing parameters are estimated from theoretical packing efficiency.
+# bulk semi-axes OR BOTH number of particles AND particle radius; 
+# bulk density OR particle density;
+# number of particles OR particle radius.
 #
-Bulk semi-axes		1000 1000 1000	# in m (use -ve values for axis 
-ratios)
+# Choose one row to determine which parameters to use.
+#
+# +--------------+------------------+----------------+------------------+-----------------+
+# | Bulk Density | Particle Density | Bulk Semi-Axis | No. of particles | Particle Radius |
+# +--------------+------------------+----------------+------------------+-----------------+
+# | value        | 0                | value          | value            | 0               |
+# +--------------+------------------+----------------+------------------+-----------------+
+# | value BROKEN | 0                | value          | 0                | value           |
+# +--------------+------------------+----------------+------------------+-----------------+
+# | value        | 0                | 0              | value            | value           |
+# +--------------+------------------+----------------+------------------+-----------------+
+# | 0            | value            | value          | value            | 0               |
+# +--------------+------------------+----------------+------------------+-----------------+
+# | 0     BROKEN | value            | value          | 0                | value           |
+# +--------------+------------------+----------------+------------------+-----------------+
+# | 0            | value            | 0              | value            | value           |
+# +--------------+------------------+----------------+------------------+-----------------+
+#
+# Missing parameters are calculated from the given parameters. 
+#
+# Then these initial parameter choices are tweaked to create a geometric pattern with
+# parameters that work to create a hexagonal close packed sphere
+# and are similar to the parameters given.
+#
+# Create an array of close packed touching spheres
+#
 Bulk density		400		# in kg/m^3
-Number of particles	500		# this is only a hint
-Color			3		# see below
-Particle radius		0		# in m
-Particle radius scaling	0.99		# any positive value
-Particle max speed	0.1		# in units of escape speed (ICs only)
 Particle density	0		# in kg/m^3
+Bulk semi-axes		1000 1000 1000	# in m (use -ve values for axis ratios)
+Number of particles	99		# this is only a hint
+Particle radius		0		# in m
+#
+# Now create an array of non-touching particles with voids.
+# The particle radius will be shrunk by this factor
+# and the particle density increased to maintain the same bulk density.
+#
+Particle radius scaling	0.99		# any positive value
+#
+# Now add motion to the particles 
+#
+Particle max speed	0.1		# in units of escape speed (ICs only)
 Initial spin period	0		# in h, around z-axis (0=no spin)
-Aggregate ID		2		# -1=none
-Output file		"kbo.ss"
+Aggregate ID		-1		# -1=none
+#
+Color			3		# see below
+#
+Output file		"hcpcomet.ss"
 #
 # Color scheme:
 #
