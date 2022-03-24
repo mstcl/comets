@@ -1,14 +1,14 @@
 File number		0
 Filename		sl9.ss
-Mass			7.806320e-17
-Bulk radius		3.348477e-08
-Bulk density		6.263952e+05
+Mass			2.650383e-17
+Bulk radius		2.412552e-08
+Bulk density		6.058959e+05
 Position		-4.950570e-04	-9.165431e-04	-1.094919e-03
 Velocity		+3.752227e-01	-5.119716e-02	+1.056065e+00
-Spin			-2.035654e-10	+1.651143e-10	+1.504399e-11
-Major axis		-0.000064	+1.000000	+0.000000
-Inter axis		-0.000000	-0.000000	+1.000000
-Minor axis		+1.000000	+0.000064	+0.000000
+Spin			-9.715613e-11	-3.702919e-10	+5.697541e-11
+Major axis		+1.000000	+0.000015	-0.000000
+Inter axis		-0.000015	+1.000000	+0.000000
+Minor axis		+0.000000	-0.000000	+1.000000
 Color			3
 Aggregate ID		-1
 
