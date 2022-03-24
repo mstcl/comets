@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
+
 position = 60
 velocity = 61
 
 with open("horizons_results.txt", "r", encoding="utf-8") as file:
-    data = [line.strip("\n").split() for line in file.readlines()[velocity:133:3]]
+    data = [line.strip("\n").split() for line in file.readlines()[velocity:134:3]]
 
 exponent = 0
 for j, coords in enumerate(data):
@@ -14,10 +15,9 @@ for j, coords in enumerate(data):
         else:
             exponent = 10**(-int(coord[-2:]))
         if i == 2:
-            data[j][i] = str(float(coord[:-4])*exponent) + "\n"
+            data[j][i] = str(float(coord[:-4])*exponent*1000) + "\n"
         else:
-            data[j][i] = str(float(coord[:-4])*exponent)
-        
+            data[j][i] = str(float(coord[:-4])*exponent*1000)
 
 
 with open("./velocities.txt", "w", encoding="utf-8") as file:

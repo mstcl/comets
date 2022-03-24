@@ -8,21 +8,19 @@ Light source option	0	! 0=FIX,1=LRG,2=POT,3=COL,4=PID,5=OID,6=CAM
 Light source lock	0	! For 3-5 only (color [0=all]/ID [agg: OID<0])
 Light source position	1 1 1	! Abs or rel coords in length units or radii*
 Light source intensity	1.0	! Between 0 and 1 inclusive; can be > 1 for POV
-Camera option		0	! 0=FIX,1=LRG,2=POT,3=COL,4=PID,5=OID
-Camera lock		0	! For 3-5 only (color [0=all]/ID [agg: OID<0])
-Camera position		0 0 1	! Abs or rel coords in length 
-units 
-or radii*
-View option		0	! 0=FIX,1=LRG,2=POT,3=COL,4=PID,5=OID,6=DIR
+Camera option		3	! 0=FIX,1=LRG,2=POT,3=COL,4=PID,5=OID
+Camera lock		3	! For 3-5 only (color [0=all]/ID [agg: OID<0])
+Camera position		0 0 1	! Abs or rel coords in length units or radii*
+View option		3	! 0=FIX,1=LRG,2=POT,3=COL,4=PID,5=OID,6=DIR
 View lock		3	! For 3-5 only (color [0=all]/ID [agg: OID<0])
 Look at/view direction	0 0 -1	! Abs or rel coords in length 
 units or radii*
 Focus distance		0	! In length units (-ve = mks)
 Sky vector		0 1 0	! Camera orientation, arbitrary units
 
-Starting view size	0	! In length units (-ve for mks units; 0=min)
-# Starting view size	-30000	! In length units (-ve for mks units; 0=min)
-View scaling criterion	0.9	! Maximum invisible fraction (or 0 to disable)
+# Starting view size	0	! In length units (-ve for mks units; 0=min)
+Starting view size      -700000	! In length units (-ve for mks units; 0=min)
+View scaling criterion	0	! Maximum invisible fraction (or 0 to disable)
 View scaling factor	1.1	! Must be > 1 if scaling enabled
 Scale length by radius? 0	! 0=NO,1=YES, for options 1,4,5 above only*
 View target zoom factor	3.0	! For view options 1,4,5 only (0 disables)
