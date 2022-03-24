@@ -1,0 +1,16 @@
+Nominal rubble pile parameters (all units MKS):
+(a,b,c)=(5762.69,5762.69,5762.69) rho_b=323.325 N=900 r=500 rho_p=550
+bulk mass=2.59181e+14 particle mass=2.87979e+11 color=3
+Estimated packing efficiency: e_N=0.587863 e_R/r=0.583040
+Adjusted parameters:
+(a,b,c)=(5501.16,5696.15,5398.98) N=871 rho_p=550
+bulk mass=2.5083e+14 bulk density=353.951
+Actual packing efficiency = 0.643548
+Additional characteristics:
+Confining radius = 5759.91 (surface gravity = 0.000504611)
+Radius of equivalent sphere = 5530.73 (surface gravity = 0.000547298)
+Escape speed from surface of particle = 0.277278
+Dynamical time for particle = 5219.32
+Escape speed from surface of rubble pile = 2.41102
+Surface speed at equator due to rotation = 0
+Dynamical time for rubble pile = 6506.14

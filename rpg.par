@@ -37,7 +37,7 @@
 Bulk density		0		# in kg/m^3
 Particle density	550		# in kg/m^3
 Bulk semi-axes		0 0 0	# in m (use -ve values for axis ratios)
-Number of particles	600		# this is only a hint
+Number of particles	900		# this is only a hint
 Particle radius		500		# in m
 #
 # Now create an array of non-touching particles with voids.
