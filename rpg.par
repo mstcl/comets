@@ -35,7 +35,7 @@
 # Create an array of close packed touching spheres
 #
 Bulk density		0		# in kg/m^3
-Particle density	550		# in kg/m^3
+Particle density	850		# in kg/m^3
 Bulk semi-axes		0 0 0	# in m (use -ve values for axis ratios)
 Number of particles	200		# this is only a hint
 Particle radius		500		# in m

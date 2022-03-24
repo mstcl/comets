@@ -19,7 +19,7 @@ Focus distance		0	! In length units (-ve = mks)
 Sky vector		0 1 0	! Camera orientation, arbitrary units
 
 # Starting view size	0	! In length units (-ve for mks units; 0=min)
-Starting view size      -1000000! In length units (-ve for mks units; 0=min)
+Starting view size      -2000000! In length units (-ve for mks units; 0=min)
 View scaling criterion	0	! Maximum invisible fraction (or 0 to disable)
 View scaling factor	1.1	! Must be > 1 if scaling enabled
 Scale length by radius? 0	! 0=NO,1=YES, for options 1,4,5 above only*
