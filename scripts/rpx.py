@@ -28,6 +28,16 @@ def get_data():
     return data
 
 
+
+def get_offset(filename: str):
+    """
+    Get the offset for position and velocity
+    """
+    step = 0
+    with open(f"../{filename}.txt", "r", encoding="utf-8") as file:
+        data = [list(map(float, line.strip("\n").split(" "))) for line in file.readlines()]
+    return np.array(data[step])
+
 def overwrite_data(data):
     """
     Overwrite data with the offset
@@ -37,23 +47,13 @@ def overwrite_data(data):
     au_m = 1.49597870691e11
     km_au = 6.68e-9
     pkdtime_s = 5.019e6
-    # convert km to AU
-    offset_position = (
-        np.array([-414139.74434847705, 277323.6402236369, -1231468.367968793]) * km_au
-    )
-    # convert m/s to AU/year/2pi
-    offset_velocity = (
-        np.array([3491.2634066288088, -6314.208154956334, 11582.300480804977])
-        * pkdtime_s
-        / au_m
-    )
+    offset_position = get_offset("positions") * km_au
+    offset_velocity = get_offset("velocities") * pkdtime_s / au_m
     for i, line in enumerate(data):
-        # offset positions on line i
         for position in range(start_position, start_position + 3):
             data[i][position] = str(np.format_float_scientific(
                 float(line[position]) + offset_position[position - start_position]
             ))
-        # offset velocities on line i
         for velocity in range(start_velocity, start_velocity + 3):
             data[i][velocity] = str(np.format_float_scientific(
                 float(line[velocity]) + offset_velocity[velocity - start_velocity]
@@ -71,4 +71,4 @@ def write_data(data):
 
 
 if __name__ == "__main__":
-    main()
+    #main()
