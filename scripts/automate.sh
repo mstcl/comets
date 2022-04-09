@@ -7,7 +7,7 @@ sleep 1
 echo "• dDelta in ss.par updated."
 sleep 1
 ../scripts/rpx.sh > /dev/null 2>&1
-echo "• tubber pile given initial conditions."
+echo "• rubber pile given initial conditions."
 sleep 1
 ../scripts/pkdgrav ss.par > /dev/null 2>&1
 echo "• pkdgrav integration complete."
@@ -18,6 +18,6 @@ sleep 1
 ../scripts/draw.sh > /dev/null 2>&1
 echo "• movie generated."
 sleep 1
-../scripts/plot_and__analyse_bt.py > /dev/null 2>&1
+../scripts/plot_and_analyse_bt.py
 echo "• metadata extracted."
-echo "Done!."
+echo "Done!"
