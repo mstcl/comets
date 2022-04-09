@@ -7,3 +7,4 @@ out_file*
 ./scripts/ssdraw
 ./scripts/ss2bt
 ./scripts/bt2ss
+__pycache__
