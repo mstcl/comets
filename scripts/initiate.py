@@ -37,8 +37,7 @@ def change_density():
     :returns: TODO
 
     """
-    # values = np.linspace(400,700,31,endpoint=True)
-    values = [400]
+    values = np.linspace(400,700,31,endpoint=True)
     for val in values:
         helper.check_file(f"./{val}/rpg.par")
         with open(f"./{val}/rpg.par", "r", encoding="utf-8") as file:
@@ -48,6 +47,6 @@ def change_density():
             new_file.writelines(['\t\t'.join(line) for line in data])
 
 if __name__ == "__main__":
-    # make_directories()
-    # copy_files()
+    make_directories()
+    copy_files()
     change_density()
