@@ -61,7 +61,7 @@ def find_average(data: np.ndarray):
 
 def write_data(heading: str, values, sequence: str):
     """
-    Write to data.txt the radii of the sunspots
+    Write data to a given file with values and a heading
     """
     check_file(f"./{sequence}/data.txt")
     with open(f"./{sequence}/data.txt", "r", encoding="utf-8") as old_file:
@@ -78,6 +78,7 @@ def write_data(heading: str, values, sequence: str):
         new_file.writelines([" ".join(line) for line in data.items()])
     return True
 
+
 def write_data_final(spot: str, values):
     """
     Write to data.txt the radii of the sunspots
@@ -92,6 +93,13 @@ def write_data_final(spot: str, values):
     with open("./dataset/values.txt", "w", encoding="utf-8") as new_file:
         new_file.writelines([" ".join(line) for line in data.items()])
     return True
+
+
+def smallest_index(data, beg: int, end, val: float):
+    """
+    Returns the index of the value closest to val
+    """
+    return np.absolute(data[beg:end] - val).argmin()
 
 
 def warn_module():
