@@ -60,7 +60,7 @@ def get_distances():
     with open("./distances.txt", "w", encoding="utf-8") as write_file:
         write_file.writelines("".join(distances))
     timesteps = list(range(len(distances)))
-    plt.plot(timesteps, [float(line.strip("\n")) for line in distances], "r:", label="average")
+    plt.plot(timesteps, [float(line.strip("\n")) for line in distances], "rx", label="average")
     plt.title("Distance of SL9 from Jupiter", fontsize=15)
     plt.ylabel(r"$r$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
