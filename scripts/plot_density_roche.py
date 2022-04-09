@@ -17,6 +17,16 @@ def main():
         data = np.array(
             [list(map(float, line.strip("\n").split(" "))) for line in file.readlines()]
         ).T
+    density = data[1][1:]
+    roche_limit = data[2][1:]
+    errors = data[3][1:]
+
+    rho_jupiter = 1326
+    r_jupiter = 71492000
+
+    roche_estimated_rigid = r_jupiter * (2 * (rho_jupiter / density)) ** (1 / 3) / 1000
+    roche_estimated_fluid = r_jupiter * 2.4823 * (rho_jupiter / density) ** (1 / 3) / 1000
+
     plt.ylabel(r"Disruption distance at threshold separation / km", fontsize=13)
     plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
     plt.xlabel(r"Comet's bulk density / kg/m$^3$", fontsize=13)
@@ -25,16 +35,18 @@ def main():
         fontsize=13,
     )
     plt.errorbar(
-        data[1][1:],
-        data[2][1:],
-        yerr=data[3][1:],
+        density,
+        roche_limit,
+        yerr=errors,
         color="mediumpurple",
         marker="x",
-        label="range",
+        label="estimated",
         ls="None",
         ms=2,
         capsize=2,
     )
+    # plt.plot(density, roche_estimated_rigid, 'g*', label="rigid")
+    # plt.plot(density, roche_estimated_fluid, 'y*', label="fluid")
     plt.tight_layout()
     plt.savefig("./roche_limit_density.png", format="png", dpi=150)
 
