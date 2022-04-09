@@ -109,3 +109,2199 @@ WARNING: FPE trapping not enabled.
 WARNING: FPE trapping not enabled.
 WARNING: FPE trapping not enabled.
 WARNING: FPE trapping not enabled.
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 194, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+Traceback (most recent call last):
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    xs_std = get_cluster_data("x", "std")
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 194, in main
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+Traceback (most recent call last):
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 194, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    roche_distance, error = get_coords(density, particles)
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 194, in main
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 194, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    xs_std = get_cluster_data("x", "std")
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 194, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 194, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 26, in get_coords
+    xs_std = get_cluster_data("x", "std")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 180, in get_cluster_data
+    rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+ValueError: maximum supported dimension for an ndarray is 32, found 473
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py:32: RuntimeWarning: invalid value encountered in sqrt
+  ys_average * ys_std**2 + (zs_average * zs_std**2) ** (0.5) / rs_average
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+Traceback (most recent call last):
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 194, in main
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    result = self.filled(fill_value).min(
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+Traceback (most recent call last):
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+Traceback (most recent call last):
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+Traceback (most recent call last):
+    minx = x.min()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 194, in main
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+    barcols.append(lines_func(
+TypeError: '<=' not supported between instances of 'str' and 'int'
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 194, in main
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    main()
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 194, in main
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 206, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 194, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 37, in get_coords
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 91, in plot_coords
+    plt.errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/pyplot.py", line 2509, in errorbar
+    return gca().errorbar(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 3467, in errorbar
+    barcols.append(lines_func(
+  File "/usr/lib/python3.10/site-packages/matplotlib/__init__.py", line 1412, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/usr/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 1142, in vlines
+    minx = x.min()
+  File "/usr/lib/python3.10/site-packages/numpy/ma/core.py", line 5703, in min
+    result = self.filled(fill_value).min(
+  File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+TypeError: '<=' not supported between instances of 'str' and 'int'
