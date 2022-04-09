@@ -33,18 +33,41 @@ def get_coords(density, particles):
         + (ys_average * ys_std) ** 2
         + (zs_average * zs_std) ** 2
     ) ** (0.5) / rs_average
-    plot_coords("x", xs_average, xs_range, density, particles, xs_std)
-    plot_coords("y", ys_average, ys_range, density, particles, ys_std)
-    plot_coords("z", zs_average, zs_range, density, particles, zs_std)
-    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
-    threshold = 4.5
-    is_disrupted = exceed_threshold(max(rs_range), threshold)
-    index_disrupted = helper.smallest_index(rs_range, 0, None, threshold)
-    return (
-        (rs_average[index_disrupted], rs_std[index_disrupted])
-        if is_disrupted
-        else (-1, 0)
+    plot_coords("x", xs_average, density, particles, xs_std)
+    plot_coords("y", ys_average, density, particles, ys_std)
+    plot_coords("z", zs_average, density, particles, zs_std)
+    plot_coords("r", rs_average, density, particles, rs_std)
+    disrupted_threshold = 10.5
+    is_disrupted = exceed_threshold(
+        np.max(rs_range) - np.min(rs_range), disrupted_threshold
     )
+    index_disrupted = 0
+    smooth_std = np.diff(rs_std, 4)[4:]
+    if np.absolute(smooth_std.argmin() - smooth_std.argmax()) >= 7:
+        index_disrupted = np.where(smooth_std == get_biggest_index(smooth_std))[0][0]
+    else:
+        index_disrupted = np.min([smooth_std.argmin(), smooth_std.argmax()])
+    return (
+        (
+            rs_average[index_disrupted - 0],
+            rs_std[index_disrupted - 0],
+            np.min(rs_average),
+        )
+        if is_disrupted
+        else (-1, 0, np.min(rs_average))
+    )
+
+
+def get_biggest_index(data: np.ndarray):
+    """
+    Return the value of the biggest absolute (keep signed)
+    """
+    values = [np.min(data), np.max(data)]
+    biggest = np.abs(values).max()
+    for val in values:
+        if np.absolute(val) == biggest:
+            return val
+    return -1
 
 
 def exceed_threshold(maximum_separation, threshold):
@@ -72,7 +95,6 @@ def calculate_roche_limit(density: float):
 def plot_coords(
     dimension: str,
     positions: np.ndarray,
-    ranges: np.ndarray,
     density: float,
     particles: int,
     distance_error: np.ndarray,
@@ -89,10 +111,16 @@ def plot_coords(
 
     roche_rigid, roche_fluid = calculate_roche_limit(density)
 
-    plt.clf()
-    plt.tight_layout()
-    plt.plot(timesteps, ranges, "bx", label="average", ms=0.5)
     if dimension == "r":
+        plt.clf()
+        plt.tight_layout()
+        plt.plot(
+            timesteps[5:-4],
+            np.diff(distance_error, 4)[5:],
+            "bx",
+            label="average",
+            ms=0.5,
+        )
         index_smallest_diff_rigid = helper.smallest_index(
             positions, 0, last, roche_rigid
         )
@@ -113,19 +141,25 @@ def plot_coords(
             linewidth=1,
             label="fluid body",
         )
-    plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
-    plt.xlabel(r"Timestep / frame", fontsize=13)
-    plt.title(
-        f"Range in {dimension}-displacements of {particles} particles, {density} kg/m$^3$",
-        fontsize=15,
-    )
-    plt.legend(loc="lower right")
-    plt.savefig(f"./{dimension}_positions_range.png", format="png", dpi=150)
+        plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
+        plt.xlabel(r"Timestep / frame", fontsize=13)
+        plt.title(
+            f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} kg/m$^3$",
+            fontsize=15,
+        )
+        plt.legend(loc="lower right")
+        plt.savefig(f"./{dimension}_positions_range.png", format="png", dpi=150)
 
     plt.clf()
     plt.tight_layout()
     plt.errorbar(
-        timesteps, positions, yerr=distance_error, fmt="rx", label="mean", ms=0.5, capsize=2
+        timesteps,
+        positions,
+        yerr=distance_error,
+        fmt="rx",
+        label="mean",
+        ms=0.5,
+        capsize=2,
     )
     if dimension == "r":
         index_smallest_diff_rigid = helper.smallest_index(
@@ -177,6 +211,7 @@ def get_cluster_data(dimension: str, avg_type: str):
             data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
         data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
         if avg_type == "mean":
+            # rbp_coords[frame] = (np.max(data) + np.min(data)) / 2
             rbp_coords[frame] = np.average(data)
         elif avg_type == "range":
             rbp_coords[frame] = np.ptp(data)
@@ -195,15 +230,23 @@ def main():
     particles = int(data[5][1][2:])
     density = float(data[6][3][8:])
 
-    roche_distance, error = get_coords(density, particles)
-    information = [str(particles), str(density), str(roche_distance), f"{str(error)}\n"]
+    roche_distance, error, closest = get_coords(density, particles)
+    information = [
+        str(particles),
+        str(density),
+        str(roche_distance),
+        str(error),
+        f"{str(closest)}\n",
+    ]
 
     helper.check_file("../results.txt")
     with open("../results.txt", "r", encoding="utf-8") as results:
         table_results = list(results.readlines())
+    results.close()
     table_results.append(" ".join(information))
     with open("../results.txt", "w", encoding="utf-8") as results:
         results.writelines(table_results)
+    results.close()
 
 
 if __name__ == "__main__":
