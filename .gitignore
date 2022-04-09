@@ -1,10 +1,10 @@
 trash
 out_file*
 *.ras*
-./scripts/pkdgrav
-./scripts/rpg
-./scripts/rpx
-./scripts/ssdraw
-./scripts/ss2bt
-./scripts/bt2ss
+scripts/pkdgrav
+scripts/rpg
+scripts/rpx
+scripts/ssdraw
+scripts/ss2bt
+scripts/bt2ss
 __pycache__
