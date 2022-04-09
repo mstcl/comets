@@ -2305,3 +2305,865 @@ Traceback (most recent call last):
   File "/usr/lib/python3.10/site-packages/numpy/core/_methods.py", line 44, in _amin
     return umr_minimum(a, axis, None, out, keepdims, initial, where)
 TypeError: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 195, in get_cluster_data
+Traceback (most recent call last):
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    rbp_coords[frame] = (np.max(data) + np.min(data))/2
+  File "<__array_function__ internals>", line 180, in amax
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 2791, in amax
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/560/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 213, in main
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 193, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/445/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 213, in main
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/415/../scripts/plot_and_analyse_bt.py", line 193, in <listcomp>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+    return _wrapreduction(a, np.maximum, 'max', axis, None, out,
+  File "/usr/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/550/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+    main()
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 213, in main
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/590/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+Traceback (most recent call last):
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/470/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+    zs_average = get_cluster_data("z", "mean")
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/460/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 213, in main
+    zs_average = get_cluster_data("z", "mean")
+    zs_average = get_cluster_data("z", "mean")
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+Traceback (most recent call last):
+KeyboardInterrupt
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 213, in main
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 213, in main
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 193, in get_cluster_data
+    roche_distance, error = get_coords(density, particles)
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 193, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 193, in <listcomp>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/495/../scripts/plot_and_analyse_bt.py", line 187, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    with open(
+  File "/usr/lib/python3.10/codecs.py", line 310, in __init__
+    zs_average = get_cluster_data("z", "mean")
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    IncrementalDecoder.__init__(self, errors)
+  File "/usr/lib/python3.10/codecs.py", line 260, in __init__
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/465/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    def __init__(self, errors='strict'):
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 213, in main
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/usr/lib/python3.10/codecs.py", line 319, in decode
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    def decode(self, input, final=False):
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 213, in main
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/410/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 193, in get_cluster_data
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 193, in <listcomp>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/420/../scripts/plot_and_analyse_bt.py", line 193, in <listcomp>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+KeyboardInterrupt
+    main()
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/480/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+    main()
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 187, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    with open(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/570/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+Traceback (most recent call last):
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/450/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+    main()
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/515/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/430/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 213, in main
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    main()
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/usr/lib/python3.10/codecs.py", line 319, in decode
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+    def decode(self, input, final=False):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+KeyboardInterrupt
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/545/../scripts/plot_and_analyse_bt.py", line 187, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/535/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+    with open(
+  File "/usr/lib/python3.10/codecs.py", line 319, in decode
+KeyboardInterrupt
+    def decode(self, input, final=False):
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+KeyboardInterrupt
+    zs_average = get_cluster_data("z", "mean")
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/440/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/485/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+Traceback (most recent call last):
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/405/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/520/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 193, in get_cluster_data
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/600/../scripts/plot_and_analyse_bt.py", line 193, in <listcomp>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/510/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+    main()
+  File "/usr/lib/python3.10/codecs.py", line 319, in decode
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/500/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    def decode(self, input, final=False):
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+Traceback (most recent call last):
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 213, in main
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 213, in main
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 213, in main
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/425/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 193, in get_cluster_data
+KeyboardInterrupt
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/435/../scripts/plot_and_analyse_bt.py", line 195, in get_cluster_data
+    rbp_coords[frame] = (np.max(data) + np.min(data))/2
+  File "<__array_function__ internals>", line 180, in amin
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 193, in <listcomp>
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/usr/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 2916, in amin
+KeyboardInterrupt
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+  File "/usr/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+KeyboardInterrupt
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 193, in get_cluster_data
+    main()
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/565/../scripts/plot_and_analyse_bt.py", line 193, in <listcomp>
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 213, in main
+    data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+KeyboardInterrupt
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/505/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/525/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 213, in main
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    roche_distance, error = get_coords(density, particles)
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/540/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/595/../scripts/plot_and_analyse_bt.py", line 195, in get_cluster_data
+KeyboardInterrupt
+    rbp_coords[frame] = (np.max(data) + np.min(data))/2
+  File "<__array_function__ internals>", line 180, in amin
+  File "/usr/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 2916, in amin
+    return _wrapreduction(a, np.minimum, 'min', axis, None, out,
+  File "/usr/lib/python3.10/site-packages/numpy/core/fromnumeric.py", line 86, in _wrapreduction
+    return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+KeyboardInterrupt
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/530/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/555/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+Traceback (most recent call last):
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    zs_average = get_cluster_data("z", "mean")
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    zs_average = get_cluster_data("z", "mean")
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/475/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+    main()
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 213, in main
+KeyboardInterrupt
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/455/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 225, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 213, in main
+    roche_distance, error = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 22, in get_coords
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/490/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/580/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+    zs_average = get_cluster_data("z", "mean")
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 192, in get_cluster_data
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 192, in <listcomp>
+    data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/395/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/400/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/385/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/375/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/340/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/360/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/350/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/330/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/355/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/380/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/300/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/320/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/305/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/335/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/315/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/365/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/325/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/310/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/345/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/370/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 231, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/390/../scripts/plot_and_analyse_bt.py", line 217, in main
+    roche_distance, error = get_coords(density, particles)
+ValueError: too many values to unpack (expected 2)
+./scripts/automate_from_parent.sh: line 4: cd: 310: No such file or directory
+./scripts/automate_from_parent.sh: line 4: cd: 315: No such file or directory
+./scripts/automate_from_parent.sh: line 4: cd: 335: No such file or directory
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/575/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
+Traceback (most recent call last):
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 243, in <module>
+    main()
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 223, in main
+    roche_distance, error, closest = get_coords(density, particles)
+  File "/home/lckdscl/documents/uni/PHYS29010/Exp_T/585/../scripts/plot_and_analyse_bt.py", line 48, in get_coords
+    np.absolute(np.min(smooth_std), np.absolute(np.max(smooth_std)))
+TypeError: return arrays must be of ArrayType
