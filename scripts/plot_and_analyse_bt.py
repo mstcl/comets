@@ -102,7 +102,7 @@ def plot_coords(
     plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
     plt.title(
-        f"Range in {dimension}-displacements of {particles} particles, {density} kg/m$^-3$",
+        f"Range in {dimension}-displacements of {particles} particles, {density} kg/m$^3$",
         fontsize=15,
     )
     plt.legend(loc="lower right")
@@ -134,7 +134,7 @@ def plot_coords(
     plt.ylabel(rf"${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
     plt.title(
-        f"Mean in {dimension}-displacements of {particles} particles, {density} kg/m$^-3$",
+        f"Mean in {dimension}-displacements of {particles} particles, {density} kg/m$^3$",
         fontsize=15,
     )
     plt.legend(loc="lower right")
