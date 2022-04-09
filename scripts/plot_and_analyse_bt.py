@@ -12,19 +12,40 @@ import matplotlib.pyplot as plt
 from modules import helper
 
 
+def get_r_std(
+    xs_average: np.ndarray,
+    ys_average: np.ndarray,
+    zs_average: np.ndarray,
+    rs_average: np.ndarray,
+):
+    """
+    Find the error in radius
+    """
+    xs_std = get_cluster_data("x", "std")
+    ys_std = get_cluster_data("y", "std")
+    zs_std = get_cluster_data("z", "std")
+    rs_std = (
+        (xs_average * xs_std) ** 2
+        + (ys_average * ys_std) ** 2
+        + (zs_average * zs_std) ** 2
+    ) ** (0.5) / rs_average
+    return rs_std
+
+
 def get_coords(density, particles):
     """
     Get the coordinates <x,y,z>
     for each frame, both range and mean
     """
-    xs_average = get_cluster_data("x", True)
-    ys_average = get_cluster_data("y", True)
-    zs_average = get_cluster_data("z", True)
-    xs_range = get_cluster_data("x", False)
-    ys_range = get_cluster_data("y", False)
-    zs_range = get_cluster_data("z", False)
+    xs_average = get_cluster_data("x", "mean")
+    ys_average = get_cluster_data("y", "mean")
+    zs_average = get_cluster_data("z", "mean")
+    xs_range = get_cluster_data("x", "range")
+    ys_range = get_cluster_data("y", "range")
+    zs_range = get_cluster_data("z", "range")
     rs_average = (xs_average**2 + ys_average**2 + zs_average**2) ** (0.5)
     rs_range = (xs_range**2 + ys_range**2 + zs_range**2) ** (0.5)
+    rs_std = get_r_std(xs_average, ys_average, zs_average, rs_average)
     plot_coords("x", xs_average, xs_range, density, particles)
     plot_coords("y", ys_average, ys_range, density, particles)
     plot_coords("z", zs_average, zs_range, density, particles)
@@ -32,7 +53,11 @@ def get_coords(density, particles):
     threshold = 4.5
     is_disrupted = exceed_threshold(max(rs_range), threshold)
     index_disrupted = helper.smallest_index(rs_range, 0, None, threshold)
-    return rs_average[index_disrupted] if is_disrupted else -1
+    return (
+        (rs_average[index_disrupted], rs_std[index_disrupted])
+        if is_disrupted
+        else (-1, 0)
+    )
 
 
 def exceed_threshold(maximum_separation, threshold):
@@ -141,7 +166,7 @@ def plot_coords(
     plt.savefig(f"./{dimension}_positions_mean.png", format="png", dpi=150)
 
 
-def get_cluster_data(dimension: str, mean: bool):
+def get_cluster_data(dimension: str, avg_type: str):
     """
     For each frame, get the average location
     of all particles if true, else get range
@@ -158,14 +183,13 @@ def get_cluster_data(dimension: str, mean: bool):
             encoding="utf-8",
         ) as file:
             data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
-        if mean:
-            rbp_coords[frame] = np.average(
-                [float(val) * au_km for val in data.T[dimension_key[dimension]]]
-            )
-        else:
-            rbp_coords[frame] = np.ptp(
-                [float(val) * au_km for val in data.T[dimension_key[dimension]]]
-            )
+        data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
+        if avg_type == "mean":
+            rbp_coords[frame] = np.average(data)
+        elif avg_type == "range":
+            rbp_coords[frame] = np.ptp(data)
+        elif avg_type == "std":
+            rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
     return rbp_coords
 
 
@@ -179,8 +203,8 @@ def main():
     particles = int(data[5][1][2:])
     density = float(data[6][3][8:])
 
-    roche_distance = get_coords(density, particles)
-    information = [str(particles), str(density), f"{str(roche_distance)}\n"]
+    roche_distance, error = get_coords(density, particles)
+    information = [str(particles), str(density), str(roche_distance), f"{str(error)}\n"]
 
     helper.check_file("../results.txt")
     with open("../results.txt", "r", encoding="utf-8") as results:
