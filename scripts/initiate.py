@@ -28,6 +28,7 @@ def copy_files():
     values = np.linspace(400,700,31,endpoint=True)
     files = ["rpg.par", "ss.par", "ssdraw.par"]
     for val in values:
+        val = int(val)
         for file in files:
             helper.check_file(f'./default/{file}')
             shutil.copy(f'./default/{file}', f'./{val}/ssdraw.par')
@@ -39,6 +40,7 @@ def change_density():
     """
     values = np.linspace(400,700,31,endpoint=True)
     for val in values:
+        val = int(val)
         helper.check_file(f"./{val}/rpg.par")
         with open(f"./{val}/rpg.par", "r", encoding="utf-8") as file:
             data = [line.split("\t\t") for line in file.readlines()]
