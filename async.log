@@ -1,0 +1,50 @@
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+WARNING: FPE trapping not enabled.
+
+(python3:305087): Gtk-WARNING **: 05:53:08.115: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305087): Gtk-WARNING **: 05:53:08.119: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305676): Gtk-WARNING **: 05:53:09.839: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305676): Gtk-WARNING **: 05:53:09.844: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305784): Gtk-WARNING **: 05:53:10.835: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305784): Gtk-WARNING **: 05:53:10.845: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305785): Gtk-WARNING **: 05:53:10.869: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305785): Gtk-WARNING **: 05:53:10.874: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305789): Gtk-WARNING **: 05:53:11.104: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305789): Gtk-WARNING **: 05:53:11.115: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305796): Gtk-WARNING **: 05:53:11.878: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305796): Gtk-WARNING **: 05:53:11.882: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305800): Gtk-WARNING **: 05:53:12.296: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305800): Gtk-WARNING **: 05:53:12.300: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305807): Gtk-WARNING **: 05:53:12.505: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305807): Gtk-WARNING **: 05:53:12.519: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305808): Gtk-WARNING **: 05:53:12.948: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305808): Gtk-WARNING **: 05:53:12.952: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305809): Gtk-WARNING **: 05:53:13.157: Unable to locate theme engine in module_path: "adwaita",
+
+(python3:305809): Gtk-WARNING **: 05:53:13.161: Unable to locate theme engine in module_path: "adwaita",
