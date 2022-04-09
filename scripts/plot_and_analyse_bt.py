@@ -12,26 +12,6 @@ import matplotlib.pyplot as plt
 from modules import helper
 
 
-def get_r_std(
-    xs_average: np.ndarray,
-    ys_average: np.ndarray,
-    zs_average: np.ndarray,
-    rs_average: np.ndarray,
-):
-    """
-    Find the error in radius
-    """
-    xs_std = get_cluster_data("x", "std")
-    ys_std = get_cluster_data("y", "std")
-    zs_std = get_cluster_data("z", "std")
-    rs_std = (
-        (xs_average * xs_std) ** 2
-        + (ys_average * ys_std) ** 2
-        + (zs_average * zs_std) ** 2
-    ) ** (0.5) / rs_average
-    return rs_std
-
-
 def get_coords(density, particles):
     """
     Get the coordinates <x,y,z>
@@ -43,13 +23,20 @@ def get_coords(density, particles):
     xs_range = get_cluster_data("x", "range")
     ys_range = get_cluster_data("y", "range")
     zs_range = get_cluster_data("z", "range")
+    xs_std = get_cluster_data("x", "std")
+    ys_std = get_cluster_data("y", "std")
+    zs_std = get_cluster_data("z", "std")
     rs_average = (xs_average**2 + ys_average**2 + zs_average**2) ** (0.5)
     rs_range = (xs_range**2 + ys_range**2 + zs_range**2) ** (0.5)
-    rs_std = get_r_std(xs_average, ys_average, zs_average, rs_average)
-    plot_coords("x", xs_average, xs_range, density, particles)
-    plot_coords("y", ys_average, ys_range, density, particles)
-    plot_coords("z", zs_average, zs_range, density, particles)
-    plot_coords("r", rs_average, rs_range, density, particles)
+    rs_std = (
+        (xs_average * xs_std) ** 2
+        + (ys_average * ys_std) ** 2
+        + (zs_average * zs_std) ** 2
+    ) ** (0.5) / rs_average
+    plot_coords("x", xs_average, xs_range, density, particles, xs_std)
+    plot_coords("y", ys_average, ys_range, density, particles, ys_std)
+    plot_coords("z", zs_average, zs_range, density, particles, zs_std)
+    plot_coords("r", rs_average, rs_range, density, particles, rs_std)
     threshold = 4.5
     is_disrupted = exceed_threshold(max(rs_range), threshold)
     index_disrupted = helper.smallest_index(rs_range, 0, None, threshold)
@@ -88,6 +75,7 @@ def plot_coords(
     ranges: np.ndarray,
     density: float,
     particles: int,
+    distance_error: np.ndarray,
 ):
     """
     Produce a plot with matplotlib
@@ -102,7 +90,8 @@ def plot_coords(
     roche_rigid, roche_fluid = calculate_roche_limit(density)
 
     plt.clf()
-    plt.plot(timesteps, ranges, "b:", label="range")
+    plt.tight_layout()
+    plt.plot(timesteps, ranges, "bx", label="average", ms=0.5)
     if dimension == "r":
         index_smallest_diff_rigid = helper.smallest_index(
             positions, 0, last, roche_rigid
@@ -134,7 +123,10 @@ def plot_coords(
     plt.savefig(f"./{dimension}_positions_range.png", format="png", dpi=150)
 
     plt.clf()
-    plt.plot(timesteps, positions, "r:", label="average")
+    plt.tight_layout()
+    plt.errorbar(
+        timesteps, positions, yerr=distance_error, fmt="rx", label="mean", ms=0.5, capsize=2
+    )
     if dimension == "r":
         index_smallest_diff_rigid = helper.smallest_index(
             positions, 0, last, roche_rigid
@@ -159,7 +151,7 @@ def plot_coords(
     plt.ylabel(rf"${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
     plt.title(
-        f"Mean in {dimension}-displacements of {particles} particles, {density} kg/m$^3$",
+        f"Mean in {dimension}-displacements of {particles} particles, {density} kg/m$^3$\n",
         fontsize=15,
     )
     plt.legend(loc="lower right")
@@ -189,7 +181,7 @@ def get_cluster_data(dimension: str, avg_type: str):
         elif avg_type == "range":
             rbp_coords[frame] = np.ptp(data)
         elif avg_type == "std":
-            rbp_coords[frame] = helper.find_std(np.ndarray(np.array(data)))
+            rbp_coords[frame] = helper.find_std(np.array(data))
     return rbp_coords
 
 
