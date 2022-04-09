@@ -2,5 +2,5 @@
 
 parent_dir=$PWD
 cd "$1" || exit
-./automate.sh
+../scripts/automate.sh
 cd "$parent_dir" || exit
