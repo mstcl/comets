@@ -31,7 +31,7 @@ def copy_files():
         val = int(val)
         for file in files:
             helper.check_file(f'./default/{file}')
-            shutil.copy(f'./default/{file}', f'./{val}/ssdraw.par')
+            shutil.copy(f'./default/{file}', f'./{val}/{file}')
 
 def change_density():
     """
