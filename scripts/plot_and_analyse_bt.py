@@ -37,36 +37,39 @@ def get_coords(density, particles):
     plot_coords("y", ys_average, density, particles, ys_std)
     plot_coords("z", zs_average, density, particles, zs_std)
     plot_coords("r", rs_average, density, particles, rs_std)
-    disrupted_threshold = 10.5
-    is_disrupted = exceed_threshold(
-        np.max(rs_range) - np.min(rs_range), disrupted_threshold
-    )
-    index_disrupted = 0
-    smooth_std = np.diff(rs_std, 4)[4:]
-    if np.absolute(smooth_std.argmin() - smooth_std.argmax()) >= 7:
-        index_disrupted = np.where(smooth_std == get_biggest_index(smooth_std))[0][0]
-    else:
-        index_disrupted = np.min([smooth_std.argmin(), smooth_std.argmax()])
-    return (
-        (
+    if exceed_threshold(np.max(rs_range) - np.min(rs_range), 200):
+        index_disrupted = get_index_disrupted(rs_std)
+        return (
             rs_average[index_disrupted - 0],
             rs_std[index_disrupted - 0],
             np.min(rs_average),
         )
-        if is_disrupted
-        else (-1, 0, np.min(rs_average))
-    )
+    return (-1, 0, np.min(rs_average))
 
 
-def get_biggest_index(data: np.ndarray):
+def get_index_disrupted(rs_std: np.ndarray):
+    """
+    Get index at disrupted distance
+    """
+    smooth_std = np.diff(rs_std, 4)[4:]
+    range_std = (np.min(smooth_std), np.max(smooth_std))
+    range_std_arg = (smooth_std.argmin(), smooth_std.argmax())
+    if np.absolute(range_std_arg[1] - range_std_arg[0]) >= 10:
+        index_disrupted = range_std_arg[get_biggest_index(range_std[1], range_std[0])]
+    else:
+        index_disrupted = np.min([range_std_arg[0], range_std_arg[1]])
+    return index_disrupted
+
+
+def get_biggest_index(big: float, small: float):
     """
     Return the value of the biggest absolute (keep signed)
     """
-    values = [np.min(data), np.max(data)]
+    values = [small, big]
     biggest = np.abs(values).max()
-    for val in values:
+    for i, val in enumerate(values):
         if np.absolute(val) == biggest:
-            return val
+            return i
     return -1
 
 
@@ -229,6 +232,7 @@ def main():
         data = [line.strip("\n").split(" ") for line in file.readlines()]
     particles = int(data[5][1][2:])
     density = float(data[6][3][8:])
+    in_density = int(data[1][1][6:])
 
     roche_distance, error, closest = get_coords(density, particles)
     information = [
@@ -236,7 +240,8 @@ def main():
         str(density),
         str(roche_distance),
         str(error),
-        f"{str(closest)}\n",
+        str(closest),
+        f"{in_density}\n",
     ]
 
     helper.check_file("../results.txt")

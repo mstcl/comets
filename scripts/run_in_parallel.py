@@ -6,6 +6,7 @@ import time
 import asyncio
 import warnings
 import numpy as np
+from modules import helper
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
@@ -15,7 +16,7 @@ async def run(shell_command):
     Run shell command in the background
     Print stdout and stderr to async.log
     """
-    logfile = open("async.log", 'ab')
+    logfile = open("async.log", "ab")
     prg = await asyncio.create_subprocess_shell(
         shell_command, stdin=PIPE, stdout=PIPE, stderr=logfile
     )
@@ -27,16 +28,30 @@ async def main():
     Driver code
     """
     # Edit this to provide the correct directory ranges.
-    # It is recommended to keep the maximmum async tasks to around 10.
-    groups = [(300,400), (405,500), (505,600)]
+    # It is recommended to keep the maximmum async tasks to around 10-20.
+    helper.check_file("./scripts/initiate.py")
+    with open("./scripts/initiate.py", "r", encoding="utf-8") as file:
+        data = [line.strip("\n") for line in file.readlines()]
+    start_val = int(data[55].split(" = ")[-1])
+    end_val = int(data[56].split(" = ")[-1])
+    step = int(data[57].split(" = ")[-1])
+    groups = [
+        (start_val + (step * 10) * i + 5, start_val + (step * 10) * (i + 1))
+        for i in range(0, int((end_val - start_val) / (step * 10)))
+    ]
     for group in groups:
+        print(f"Running for values between {group[0]}-{group[1]}")
         start_density = group[0]
         end_density = group[1]
-        step = 5
         values = np.linspace(
-            start_density, end_density, int((end_density - start_density)/step) + 1, endpoint=True
+            start_density,
+            end_density,
+            int((end_density - start_density) / step) + 1,
+            endpoint=True,
         )
-        commands = [run(f"./scripts/automate_from_parent.sh {int(val)}") for val in values]
+        commands = [
+            run(f"./scripts/automate_from_parent.sh {int(val)}") for val in values
+        ]
         for task in asyncio.as_completed(commands):
             await task
 
