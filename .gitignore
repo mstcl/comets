@@ -8,3 +8,7 @@ scripts/ssdraw
 scripts/ss2bt
 scripts/bt2ss
 __pycache__
+[0-9][0-9][0-9]/
+*.log
+*.pdf
+*.fdl
