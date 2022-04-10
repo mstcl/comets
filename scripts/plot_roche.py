@@ -89,7 +89,7 @@ def main():
         label="perijove",
     )
     plt.legend(loc="best", fontsize="small")
-    plt.savefig("./roche_limit_density.png", format="png", dpi=150)
+    plt.savefig("./roche_limit_plot.png", format="png", dpi=150)
 
 
 if __name__ == "__main__":

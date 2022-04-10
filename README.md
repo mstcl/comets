@@ -49,7 +49,7 @@ Alternatively, edit line `56-58` in `initiate.py`, i.e. the following variables
 to change how many folders are generated. These variables are so-called
 "densities" but to vary any other quantity such as radius, number of particles,
 the code should still work. To change the quantity being varied, un/comment the
-necessary files in `initiate.py`, `plot_density_roche.py` and
+necessary files in `initiate.py`, `plot_roche.py` and
 `plot_and_analyse_bt.py`.
 
 ```python3
@@ -114,11 +114,11 @@ this is a non-issue for me.). To plot the Roche limit vs. density (or whichever
 variable we're varying), run the following:
 
 ```shell
-$ ./scripts/plot_density_roche.py
+$ ./scripts/plot_roche.py
 ```
 
-The file `./roche_limit_density.png` will be generated. Copy and rename this if
-it's important, because running `plot_density_roche.py` again will override it!
+The file `./roche_limit_plot.png` will be generated. Copy and rename this if
+it's important, because running `plot_roche.py` again will override it!
 
 ## TL;DR Summary
 
@@ -127,7 +127,7 @@ the top directory** to get the results:
 
 1. `initiate.py`
 2. `run_in_parallel.py`
-3. `plot_density_roche.py`
+3. `plot_roche.py`
 
 If there are anything that needs manual intervention, run
 **in the simulation directory**:
