@@ -38,7 +38,7 @@ batch create multiple directories named after the value provided in `rpg.par`.
 This is the intended way the scripts were written. To do this, execute
 `initiate.py` to create a directory for each value of the varying quantity.
 
-```
+```shell
 $ git checkout -b some_branch_name
 $ ./scripts/initiate.py
 ```
@@ -63,7 +63,7 @@ STEP = 5            # step size
 
 Next, if varying **density** (default) and sticking to the default range (300-600 $kg/m^3$ bulk density), start running the automation scripts asynchronously, in the top directory, execute the following commands:
 
-```
+```shell
 $ ./scripts/run_in_parallel.py
 ```
 
@@ -88,9 +88,9 @@ If running tasks asynchronously is not preferred, or there is a need to perform
 certain simulations manually, then in each simulation directory, execute
 `automate.sh`. For example:
 
-```
-   $ cd 500 # go into density value 500
-   $ ../scripts/automate.sh
+```shell
+ $ cd 500 # go into density value 500
+ $ ../scripts/automate.sh
 ```
 
 ### Performing some but not all tasks
@@ -121,8 +121,8 @@ third column (the measured value), keeping the parity of everything else, but
 this is a non-issue for me.). To plot the Roche limit vs. density (or whichever
 variable we're varying), run the following:
 
-```
-   $ ./scripts/plot_density_roche.py
+```shell
+$ ./scripts/plot_density_roche.py
 ```
 
 The file `./roche_limit_density.png` will be generated. Copy and rename this if
