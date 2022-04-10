@@ -89,8 +89,8 @@ certain simulations manually, then in each simulation directory, execute
 `automate.sh`. For example:
 
 ```shell
- $ cd 500 # go into density value 500
- $ ../scripts/automate.sh
+$ cd 500 # go into density value 500
+$ ../scripts/automate.sh
 ```
 
 ### Performing some but not all tasks
