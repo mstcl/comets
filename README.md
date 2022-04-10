@@ -20,7 +20,7 @@ planet used is Jupiter and the comet Shoemaker-Levy 9.
 
 ## Download
 
-```
+```shell
 $ git clone https://github.com/mstcl/comets
 $ cd comets
 ```
