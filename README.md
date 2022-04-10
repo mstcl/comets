@@ -48,15 +48,15 @@ $ ./scripts/initiate.py
 Alternatively, edit line `56-58` in `initiate.py`, i.e. the following variables
 to change how many folders are generated. These variables are so-called
 "densities" but to vary any other quantity such as radius, number of particles,
-the code should still work. Of course, appropriate ranges need to be provided,
-and make sure the line `50` points to the right line in `rpg.par` (read the
-comments for more).
+the code should still work. To change the quantity being varied, un/comment the
+necessary files in `initiate.py`, `plot_density_roche.py` and
+`plot_and_analyse_bt.py`.
 
 ```python3
 # scripts/initiate.py
-START_DENSITY = 300 # start value
-END_DENSITY = 600   # end value
-STEP = 5            # step size
+START_VALUE = 300
+END_VALUE = 600
+STEP = 5
 ```
 
 ### Running simulations asynchronously
@@ -71,16 +71,8 @@ Nothing will be piped to `STDOUT` except the simulation time at the end. Look
 at `async.log` created automatically in the top directory to check for runtime
 errors and warnings.
 
-If default range is changed, one would have to edit `run_in_parallel.py`, line
-`31`, to reflect the actual directory names/values. Remember to keep the number
-of asynchronous tasks (the range for each tuple in the `groups`) to about 10.
-
-The default value is given below as an example:
-
-```python3
-# scripts/run_in_parallel.py
-groups = [(300,400), (405,500), (505,600)]
-```
+If default range is changed in `initiate.py`, `run_in_parallel.py` will read
+this and set the number of asynchronous tasks to 10 in the correct step size.
 
 ### Running simulations manually
 
