@@ -53,8 +53,8 @@ def change_density(start: int, end: int, step: int):
 
 
 if __name__ == "__main__":
-    START_DENSITY = 300
-    END_DENSITY = 600
+    START_DENSITY = 100
+    END_DENSITY = 800
     STEP = 5
     make_directories(START_DENSITY, END_DENSITY, STEP)
     copy_files(START_DENSITY, END_DENSITY, STEP)
