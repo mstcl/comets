@@ -12,7 +12,7 @@ from modules import helper
 
 def make_directories(start: int, end: int, step: int):
     """
-    Create folders if they don't exist
+    Create the following directories if they don't exist
     """
     values = np.linspace(start, end, int((end - start) / step) + 1, endpoint=True)
     for val in values:
@@ -23,8 +23,8 @@ def make_directories(start: int, end: int, step: int):
 
 def copy_files(start: int, end: int, step: int):
     """
-    :returns: TODO
-
+    Copy all parameter files from the default folder
+    to newly created directories
     """
     values = np.linspace(start, end, int((end - start) / step) + 1, endpoint=True)
     files = ["rpg.par", "ss.par", "ssdraw.par"]
@@ -37,8 +37,7 @@ def copy_files(start: int, end: int, step: int):
 
 def change_density(start: int, end: int, step: int):
     """
-    :returns: TODO
-
+    Open rpg.par and change the appropriate value (density in the default case)
     """
     values = np.linspace(start, end, int((end - start) / step) + 1, endpoint=True)
     for val in values:
@@ -46,6 +45,8 @@ def change_density(start: int, end: int, step: int):
         helper.check_file(f"./{val}/rpg.par")
         with open(f"./{val}/rpg.par", "r", encoding="utf-8") as file:
             data = [line.split("\t\t") for line in file.readlines()]
+        # line 36 is the bulk density quantity, to alter another quantity,
+        # read 'rpg.par' to find out which line needs to be changed
         data[36][1] = str(val)
         with open(f"./{val}/rpg.par", "w", encoding="utf-8") as new_file:
             new_file.writelines(["\t\t".join(line) for line in data])
