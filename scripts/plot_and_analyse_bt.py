@@ -37,8 +37,11 @@ def get_coords(density, particles):
     plot_coords("y", ys_average, density, particles, ys_std)
     plot_coords("z", zs_average, density, particles, zs_std)
     plot_coords("r", rs_average, density, particles, rs_std)
-    # if exceed_threshold(np.max(rs_range) - np.min(rs_range), 100):  # density
-    if exceed_threshold(np.max(rs_range) - np.min(rs_range), 5*density/1000):  #  bulk semi-axes
+
+    # if exceed_threshold(np.max(rs_range) - np.min(rs_range), 100):  # uncomment for density
+    if exceed_threshold(
+        np.max(rs_range) - np.min(rs_range), 5 * density / 1000
+    ):  #  uncomment for bulk semi-axes
         index_disrupted = get_index_disrupted(rs_std)
         return (
             rs_average[index_disrupted - 0],
@@ -147,14 +150,17 @@ def plot_coords(
         )
         plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
         plt.xlabel(r"Timestep / frame", fontsize=13)
+
         # plt.title(
         #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} kg/m$^3$",
         #     fontsize=15,
-        # ) # density
+        # )  # uncomment for density
+
         plt.title(
             f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} m",
             fontsize=15,
-        ) # bulk semi-axes
+        )  # uncomment for bulk semi-axes
+
         plt.legend(loc="lower right")
         plt.savefig(f"./{dimension}_positions_range.png", format="png", dpi=150)
 
@@ -192,14 +198,17 @@ def plot_coords(
         )
     plt.ylabel(rf"${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
+
     # plt.title(
     #     f"Mean in {dimension}-displacements of {particles} particles, {density} kg/m$^3$\n",
     #     fontsize=15,
-    # ) # density
+    # )  # uncomment for density
+
     plt.title(
         f"Mean in {dimension}-displacements of {particles} particles, {density} m\n",
         fontsize=15,
-    ) # bulk semi-axes
+    )  #  uncomment for bulk semi-axes
+
     plt.legend(loc="lower right")
     plt.savefig(f"./{dimension}_positions_mean.png", format="png", dpi=150)
 
@@ -223,7 +232,7 @@ def get_cluster_data(dimension: str, avg_type: str):
             data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
         data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
         if avg_type == "mean":
-            # rbp_coords[frame] = (np.max(data) + np.min(data)) / 2
+            # rbp_coords[frame] = (np.max(data) + np.min(data)) / 2  # different way to calculate avg
             rbp_coords[frame] = np.average(data)
         elif avg_type == "range":
             rbp_coords[frame] = np.ptp(data)
@@ -240,23 +249,25 @@ def main():
     with open("./sl9_stats.txt", "r", encoding="utf-8") as file:
         data = [line.strip("\n").split(" ") for line in file.readlines()]
     particles = int(data[5][1][2:])
-    # density = float(data[6][3][8:]) # density
-    # in_density = int(data[1][0][9:]) # density
-    density = float(
-        np.average(list(map(float, data[5][0][9:-1].split(","))))
-    )  # bulk semi-axes
-    in_density = int(
-        np.average(list(map(float, data[1][0][9:-1].split(","))))
-    )  # bulk semi-axes
 
-    roche_distance, error, closest = get_coords(density, particles)
+    quantity = float(data[6][3][8:])  # uncomment for density
+    in_quantity = int(data[1][0][9:])  # uncomment for density
+
+    quantity = float(
+        np.average(list(map(float, data[5][0][9:-1].split(","))))
+    )  # uncomment for bulk semi-axes
+    in_quantity = int(
+        np.average(list(map(float, data[1][0][9:-1].split(","))))
+    )  # uncomment bulk semi-axes
+
+    roche_distance, error, closest = get_coords(quantity, particles)
     information = [
         str(particles),
-        str(density),
+        str(quantity),
         str(roche_distance),
         str(error),
         str(closest),
-        f"{in_density}\n",
+        f"{in_quantity}\n",
     ]
 
     helper.check_file("../results.txt")
