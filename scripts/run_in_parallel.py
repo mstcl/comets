@@ -26,6 +26,8 @@ async def main():
     """
     Driver code
     """
+    # Edit this to provide the correct directory ranges.
+    # It is recommended to keep the maximmum async tasks to around 10.
     groups = [(300,400), (405,500), (505,600)]
     for group in groups:
         start_density = group[0]
