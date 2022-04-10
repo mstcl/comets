@@ -55,23 +55,9 @@ def change_value(start: int, end: int, step: int):
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-<<<<<<< HEAD
-    START_DENSITY = 100
-    END_DENSITY = 800
-=======
-    START_DENSITY = 400
-    END_DENSITY = 1015
->>>>>>> 3375e8d (Edited: allow changing density vs changing bulk semi-axes)
-    STEP = 5
-    make_directories(START_DENSITY, END_DENSITY, STEP)
-    copy_files(START_DENSITY, END_DENSITY, STEP)
-    change_density(START_DENSITY, END_DENSITY, STEP)
-=======
     START_VALUE = 400  # edit this: starting value
     END_VALUE = 1015  # edit this: starting value
     STEP = 5  # edit this: starting value
     make_directories(START_VALUE, END_VALUE, STEP)
     copy_files(START_VALUE, END_VALUE, STEP)
     change_value(START_VALUE, END_VALUE, STEP)
->>>>>>> b0859ee (Edited: clean up)
