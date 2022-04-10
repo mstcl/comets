@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """
-Set up folders of bulk density values from 400-700
-in increments of 10
+1. Set up folders of values in a given range
+in increments of given step
+2. Change the necessary value in rpg.par
 """
 
 import os
@@ -35,7 +36,7 @@ def copy_files(start: int, end: int, step: int):
             shutil.copy(f"./default/{file}", f"./{val}/{file}")
 
 
-def change_density(start: int, end: int, step: int):
+def change_value(start: int, end: int, step: int):
     """
     Open rpg.par and change the appropriate value (density in the default case)
     """
@@ -45,15 +46,16 @@ def change_density(start: int, end: int, step: int):
         helper.check_file(f"./{val}/rpg.par")
         with open(f"./{val}/rpg.par", "r", encoding="utf-8") as file:
             data = [line.split("\t\t") for line in file.readlines()]
-        # line 50 is the bulk density quantity, to alter another quantity,
-        # read 'rpg.par' to find out which line needs to be changed
-        # data[36][1] = str(val)  # density
-        data[38][1] = f"{str(val)} {str(val)} {str(val)}"  # bulk semi-axes
+        # data[36][1] = str(val)  # uncomment to change to density
+        data[38][
+            1
+        ] = f"{str(val)} {str(val)} {str(val)}"  # uncomment to change to bulk semi-axes
         with open(f"./{val}/rpg.par", "w", encoding="utf-8") as new_file:
             new_file.writelines(["\t\t".join(line) for line in data])
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
 <<<<<<< HEAD
     START_DENSITY = 100
     END_DENSITY = 800
@@ -65,3 +67,11 @@ if __name__ == "__main__":
     make_directories(START_DENSITY, END_DENSITY, STEP)
     copy_files(START_DENSITY, END_DENSITY, STEP)
     change_density(START_DENSITY, END_DENSITY, STEP)
+=======
+    START_VALUE = 400  # edit this: starting value
+    END_VALUE = 1015  # edit this: starting value
+    STEP = 5  # edit this: starting value
+    make_directories(START_VALUE, END_VALUE, STEP)
+    copy_files(START_VALUE, END_VALUE, STEP)
+    change_value(START_VALUE, END_VALUE, STEP)
+>>>>>>> b0859ee (Edited: clean up)
