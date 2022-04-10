@@ -45,16 +45,22 @@ def change_density(start: int, end: int, step: int):
         helper.check_file(f"./{val}/rpg.par")
         with open(f"./{val}/rpg.par", "r", encoding="utf-8") as file:
             data = [line.split("\t\t") for line in file.readlines()]
-        # line 36 is the bulk density quantity, to alter another quantity,
+        # line 50 is the bulk density quantity, to alter another quantity,
         # read 'rpg.par' to find out which line needs to be changed
-        data[36][1] = str(val)
+        # data[36][1] = str(val)  # density
+        data[38][1] = f"{str(val)} {str(val)} {str(val)}"  # bulk semi-axes
         with open(f"./{val}/rpg.par", "w", encoding="utf-8") as new_file:
             new_file.writelines(["\t\t".join(line) for line in data])
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     START_DENSITY = 100
     END_DENSITY = 800
+=======
+    START_DENSITY = 400
+    END_DENSITY = 1015
+>>>>>>> 3375e8d (Edited: allow changing density vs changing bulk semi-axes)
     STEP = 5
     make_directories(START_DENSITY, END_DENSITY, STEP)
     copy_files(START_DENSITY, END_DENSITY, STEP)
