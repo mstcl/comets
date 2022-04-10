@@ -2,4 +2,4 @@
 
 ## Run 2 graph
 
-![graph][roroche_limit_density.png]
+![graph](roroche_limit_density.png)
