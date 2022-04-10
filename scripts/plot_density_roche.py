@@ -17,9 +17,9 @@ def main():
         data = np.array(
             [list(map(float, line.strip("\n").split(" "))) for line in file.readlines()]
         ).T
-    density = data[1][1:]
-    roche_limit = data[2][1:]
-    errors = data[3][1:]
+    density = data[1][0:]
+    roche_limit = data[2][0:]
+    errors = data[3][0:]
 
     rho_jupiter = 1326
     r_jupiter = 71492000
