@@ -3,7 +3,8 @@
 # To simply redo any part of the process without redoing everything, comment out the appropriate lines
 # But keep the sleep commands or else there might be errors with python opening and closing files
 
-# To change the coefficient of restitution, it is uncessary to run step 1 and 2 in each sim directory
+# To change the coefficient of restitution, it is uncessary to run step 1-3 in each sim directory,
+# however, it is still necessary to run it in default
 
 ############
 #  1. RPG  #
