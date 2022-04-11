@@ -28,7 +28,14 @@ def copy_files(start: int, end: int, step: int):
     to newly created directories
     """
     values = np.linspace(start, end, int((end - start) / step) + 1, endpoint=True)
-    files = ["rpg.par", "ss.par", "ssdraw.par"]
+    # files = ["rpg.par", "ss.par", "ssdraw.par"]
+    files = [
+        "rpg.par",
+        "ss.par",
+        "ssdraw.par",
+        "sl9_stats.txt",
+        "sl9_crash.ss",
+    ]  # uncomment this to vary coefficient of restitution
     for val in values:
         val = int(val)
         for file in files:
@@ -60,9 +67,11 @@ def change_value(start: int, end: int, step: int):
 
 
 if __name__ == "__main__":
-    START_VALUE = 100
-    END_VALUE = 480
-    STEP = 2
+    START_VALUE = 0
+    END_VALUE = 100
+    STEP = 5
     make_directories(START_VALUE, END_VALUE, STEP)
     copy_files(START_VALUE, END_VALUE, STEP)
-    change_value(START_VALUE, END_VALUE, STEP)
+    # change_value(
+    #     START_VALUE, END_VALUE, STEP
+    # )  # comment this out if varying coefficient of restitution
