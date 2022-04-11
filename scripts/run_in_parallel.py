@@ -38,10 +38,10 @@ async def main():
     step = int(data[64].split(" = ")[-1])
 
     groups = [
-        [start_val + (step * 10) * i + 5, start_val + (step * 10) * (i + 1)]
+        [start_val + (step * 10) * i + step, start_val + (step * 10) * (i + 1)]
         for i in range(0, int((end_val - start_val) / (step * 10)))
     ]
-    groups[0][0] -= 5
+    groups[0][0] -= step
     for group in groups:
         print(f"Running for values between {group[0]}-{group[1]}")
         start_density = group[0]
