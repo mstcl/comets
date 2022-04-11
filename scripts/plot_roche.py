@@ -82,28 +82,41 @@ def main():
         ms=1,
         label="perijove",
     )
+    if minimum_quantity_no_disruption < 0:
+        plt.axvline(
+            minimum_quantity_no_disruption,
+            color="r",
+            linestyle="-",
+            linewidth=1,
+            alpha=0.2,
+            label="minimum distance of coalescence",
+        )
 
-    plt.axvline(
-        minimum_quantity_no_disruption,
-        color="r",
-        linestyle="-",
-        linewidth=1,
-        alpha=0.2,
-        label="minimum distance of coalescence",
+    #####################
+    #  PARTICLE NUMBER  #
+    #####################
+
+    plt.xlabel(
+        r"Number of particles", fontsize=13
+    )
+
+    plt.title(
+        "Effect of number of particles of a comet rubber pile on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
+        fontsize=13,
     )
 
     ####################
     #  BULK SEMI-AXES  #
     ####################
 
-    plt.xlabel(
-        r"Comet's average radius / m", fontsize=13
-    )  # uncomment for bulk semi-axes
+    # plt.xlabel(
+    #     r"Comet's average radius / m", fontsize=13
+    # )
 
-    plt.title(
-        "Effect of radius of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
-        fontsize=13,
-    )  # uncomment for bulk semi-axes
+    # plt.title(
+    #     "Effect of radius of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
+    #     fontsize=13,
+    # )
 
     #############
     #  DENSITY  #
@@ -117,14 +130,14 @@ def main():
     # )  # uncomment for density
 
     # plt.plot(
-    #     dummy_quantity, roche_estimated_rigid, color="g", label="rigid", alpha=0.2
+    #     dummy_quantity, roche_estimated_rigid, color="g", label="rigid satellite", alpha=0.2
     # )  # uncomment for density
 
     # plt.plot(
     #     dummy_quantity,
     #     roche_estimated_fluid,
     #     color="y",
-    #     label="fluid",
+    #     label="fluid satellite",
     #     alpha=0.2,
     # )  # uncomment for density
 
