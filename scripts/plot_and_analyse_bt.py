@@ -7,41 +7,61 @@ This file does 4 things:
     4. Output a value for the Roche limit and write it to results.txt
 """
 
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 from modules import helper
 
 
-def get_coords(density, particles):
+def get_coords_range():
+    """TODO: Docstring for get_coords_range.
+    :returns: TODO
+
     """
-    Get the coordinates <x,y,z>
-    for each frame, both range and mean
+    xs_range = get_cluster_data("x", "range")
+    ys_range = get_cluster_data("y", "range")
+    zs_range = get_cluster_data("z", "range")
+    return (xs_range**2 + ys_range**2 + zs_range**2) ** (0.5)
+
+
+def get_coords_avg():
+    """
+    Get errors
     """
     xs_average = get_cluster_data("x", "mean")
     ys_average = get_cluster_data("y", "mean")
     zs_average = get_cluster_data("z", "mean")
-    xs_range = get_cluster_data("x", "range")
-    ys_range = get_cluster_data("y", "range")
-    zs_range = get_cluster_data("z", "range")
     xs_std = get_cluster_data("x", "std")
     ys_std = get_cluster_data("y", "std")
     zs_std = get_cluster_data("z", "std")
     rs_average = (xs_average**2 + ys_average**2 + zs_average**2) ** (0.5)
-    rs_range = (xs_range**2 + ys_range**2 + zs_range**2) ** (0.5)
-    rs_std = (
-        (xs_average * xs_std) ** 2
-        + (ys_average * ys_std) ** 2
-        + (zs_average * zs_std) ** 2
-    ) ** (0.5) / rs_average
-    plot_coords("x", xs_average, density, particles, xs_std)
-    plot_coords("y", ys_average, density, particles, ys_std)
-    plot_coords("z", zs_average, density, particles, zs_std)
-    plot_coords("r", rs_average, density, particles, rs_std)
+    return (
+        (
+            (
+                (xs_average * xs_std) ** 2
+                + (ys_average * ys_std) ** 2
+                + (zs_average * zs_std) ** 2
+            )
+            ** (0.5)
+            / rs_average
+        ),
+        rs_average,
+    )
 
-    # if exceed_threshold(np.max(rs_range) - np.min(rs_range), 100):  # uncomment for density
-    if exceed_threshold(
-        np.max(rs_range) - np.min(rs_range), 5 * density / 1000
-    ):  #  uncomment for bulk semi-axes
+
+def get_coords(quantity, particles):
+    """
+    Get the coordinates <x,y,z>
+    for each frame, both range and mean
+    """
+    rs_range = get_coords_range()
+    rs_std, rs_average = get_coords_avg()
+    plot_coords("r", rs_average, quantity, particles, rs_std)
+
+    threshold = 100  # uncomment for density
+    threshold = 5 * quantity / 1000  # uncomment for bulk semi-axes
+
+    if exceed_threshold(np.max(rs_range) - np.min(rs_range), threshold):
         index_disrupted = get_index_disrupted(rs_std)
         return (
             rs_average[index_disrupted - 0],
@@ -118,51 +138,46 @@ def plot_coords(
 
     roche_rigid, roche_fluid = calculate_roche_limit(density)
 
-    if dimension == "r":
-        plt.clf()
-        plt.tight_layout()
-        plt.plot(
-            timesteps[5:-4],
-            np.diff(distance_error, 4)[5:],
-            "bx",
-            label="average",
-            ms=0.5,
-        )
-        index_smallest_diff_rigid = helper.smallest_index(
-            positions, 0, last, roche_rigid
-        )
-        index_smallest_diff_fluid = helper.smallest_index(
-            positions, 0, last, roche_fluid
-        )
-        plt.axvline(
-            index_smallest_diff_rigid,
-            color="g",
-            linestyle="-",
-            linewidth=1,
-            label="rigid body",
-        )
-        plt.axvline(
-            index_smallest_diff_fluid,
-            color="y",
-            linestyle="-",
-            linewidth=1,
-            label="fluid body",
-        )
-        plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
-        plt.xlabel(r"Timestep / frame", fontsize=13)
+    plt.clf()
+    plt.tight_layout()
+    plt.plot(
+        timesteps[5:-4],
+        np.diff(distance_error, 4)[5:],
+        "bx",
+        label="average",
+        ms=0.5,
+    )
+    index_smallest_diff_rigid = helper.smallest_index(positions, 0, last, roche_rigid)
+    index_smallest_diff_fluid = helper.smallest_index(positions, 0, last, roche_fluid)
+    plt.axvline(
+        index_smallest_diff_rigid,
+        color="g",
+        linestyle="-",
+        linewidth=1,
+        label="rigid body",
+    )
+    plt.axvline(
+        index_smallest_diff_fluid,
+        color="y",
+        linestyle="-",
+        linewidth=1,
+        label="fluid body",
+    )
+    plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
+    plt.xlabel(r"Timestep / frame", fontsize=13)
 
-        # plt.title(
-        #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} kg/m$^3$",
-        #     fontsize=15,
-        # )  # uncomment for density
+    # plt.title(
+    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} kg/m$^3$",
+    #     fontsize=15,
+    # )  # uncomment for density
 
-        plt.title(
-            f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} m",
-            fontsize=15,
-        )  # uncomment for bulk semi-axes
+    plt.title(
+        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} m",
+        fontsize=15,
+    )  # uncomment for bulk semi-axes
 
-        plt.legend(loc="lower right")
-        plt.savefig(f"./{dimension}_positions_range.png", format="png", dpi=150)
+    plt.legend(loc="lower right")
+    plt.savefig(f"./{dimension}_positions_range.png", format="png", dpi=150)
 
     plt.clf()
     plt.tight_layout()
@@ -175,27 +190,22 @@ def plot_coords(
         ms=0.5,
         capsize=2,
     )
-    if dimension == "r":
-        index_smallest_diff_rigid = helper.smallest_index(
-            positions, 0, last, roche_rigid
-        )
-        index_smallest_diff_fluid = helper.smallest_index(
-            positions, 0, last, roche_fluid
-        )
-        plt.axvline(
-            index_smallest_diff_rigid,
-            color="g",
-            linestyle="-",
-            linewidth=1,
-            label="rigid body",
-        )
-        plt.axvline(
-            index_smallest_diff_fluid,
-            color="y",
-            linestyle="-",
-            linewidth=1,
-            label="fluid body",
-        )
+    index_smallest_diff_rigid = helper.smallest_index(positions, 0, last, roche_rigid)
+    index_smallest_diff_fluid = helper.smallest_index(positions, 0, last, roche_fluid)
+    plt.axvline(
+        index_smallest_diff_rigid,
+        color="g",
+        linestyle="-",
+        linewidth=1,
+        label="rigid body",
+    )
+    plt.axvline(
+        index_smallest_diff_fluid,
+        color="y",
+        linestyle="-",
+        linewidth=1,
+        label="fluid body",
+    )
     plt.ylabel(rf"${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
@@ -250,8 +260,8 @@ def main():
         data = [line.strip("\n").split(" ") for line in file.readlines()]
     particles = int(data[5][1][2:])
 
-    quantity = float(data[6][3][8:])  # uncomment for density
-    in_quantity = int(data[1][0][9:])  # uncomment for density
+    # quantity = float(data[6][3][8:])  # uncomment for density
+    # in_quantity = int(data[1][0][9:])  # uncomment for density
 
     quantity = float(
         np.average(list(map(float, data[5][0][9:-1].split(","))))
@@ -269,8 +279,15 @@ def main():
         str(closest),
         f"{in_quantity}\n",
     ]
+    write_results(information)
 
-    helper.check_file("../results.txt")
+
+def write_results(information: list):
+    """
+    Write results to results.txt
+    """
+    if not os.path.exists("../results.txt"):
+        open("../results.txt", "x", encoding="utf-8").close()
     with open("../results.txt", "r", encoding="utf-8") as results:
         table_results = list(results.readlines())
     results.close()
