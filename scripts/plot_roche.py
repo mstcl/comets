@@ -122,24 +122,24 @@ def main():
     #  DENSITY  #
     #############
 
-    # plt.xlabel(r"Comet's bulk density / kg/m$^3$", fontsize=13)  # uncomment for density
+    plt.xlabel(r"Comet's bulk density / kg/m$^3$", fontsize=13)
 
-    # plt.title(
-    #     "Effect of bulk density of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
-    #     fontsize=13,
-    # )  # uncomment for density
+    plt.title(
+        "Effect of bulk density of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
+        fontsize=13,
+    )
 
-    # plt.plot(
-    #     dummy_quantity, roche_estimated_rigid, color="g", label="rigid satellite", alpha=0.2
-    # )  # uncomment for density
+    plt.plot(
+        dummy_quantity, roche_estimated_rigid, color="g", label="rigid satellite", alpha=0.2
+    )
 
-    # plt.plot(
-    #     dummy_quantity,
-    #     roche_estimated_fluid,
-    #     color="y",
-    #     label="fluid satellite",
-    #     alpha=0.2,
-    # )  # uncomment for density
+    plt.plot(
+        dummy_quantity,
+        roche_estimated_fluid,
+        color="y",
+        label="fluid satellite",
+        alpha=0.2,
+    )
 
     #######################
     #  ADD LEGEND & SAVE  #
