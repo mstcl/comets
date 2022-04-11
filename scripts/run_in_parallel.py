@@ -27,18 +27,21 @@ async def main():
     """
     Driver code
     """
-    # Edit this to provide the correct directory ranges.
     # It is recommended to keep the maximmum async tasks to around 10-20.
     helper.check_file("./scripts/initiate.py")
     with open("./scripts/initiate.py", "r", encoding="utf-8") as file:
         data = [line.strip("\n") for line in file.readlines()]
-    start_val = int(data[56].split(" = ")[-1])
-    end_val = int(data[57].split(" = ")[-1])
-    step = int(data[58].split(" = ")[-1])
+
+    # This should point to the correct lines in initiate.py
+    start_val = int(data[62].split(" = ")[-1])
+    end_val = int(data[63].split(" = ")[-1])
+    step = int(data[64].split(" = ")[-1])
+
     groups = [
-        (start_val + (step * 10) * i + 5, start_val + (step * 10) * (i + 1))
+        [start_val + (step * 10) * i + 5, start_val + (step * 10) * (i + 1)]
         for i in range(0, int((end_val - start_val) / (step * 10)))
     ]
+    groups[0][0] -= 5
     for group in groups:
         print(f"Running for values between {group[0]}-{group[1]}")
         start_density = group[0]
