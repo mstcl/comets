@@ -82,7 +82,7 @@ def main():
         ms=1,
         label="perijove",
     )
-    if minimum_quantity_no_disruption < 0:
+    if np.min(np.array(roche_limit)) < 0:
         plt.axvline(
             minimum_quantity_no_disruption,
             color="r",
