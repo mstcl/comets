@@ -45,11 +45,11 @@ $ ./scripts/initiate.py
 
 ### Changing default quantity and range of values
 
-Alternatively, edit line `56-58` in `initiate.py`, i.e. the following variables
-to change how many folders are generated. These variables are so-called
-"densities" but to vary any other quantity such as radius, number of particles,
-the code should still work. To change the quantity being varied, un/comment the
-necessary files in `initiate.py`, `plot_roche.py` and
+Alternatively, edit in `initiate.py` the lines below, i.e. the following
+variables to change how many folders are generated. These variables are
+so-called "densities" but to vary any other quantity such as radius, number of
+particles, the code should still work. To change the quantity being varied,
+un/comment the necessary files in `initiate.py`, `plot_roche.py` and
 `plot_and_analyse_bt.py`.
 
 ```python3
@@ -134,6 +134,9 @@ If there are anything that needs manual intervention, run
 **in the simulation directory**:
 
 1. `automate.sh`
+
+The script `get_horizons_data.py` is for extracting data from
+`horizons_results.txt`, this is already done in `main` for convenience.
 
 ## LICENSE
 
