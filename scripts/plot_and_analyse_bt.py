@@ -57,7 +57,7 @@ def get_coords(quantity, particles: int, density: float):
     rs_std, rs_average = get_coords_avg()
     plot_coords("r", rs_average, quantity, particles, rs_std, density)
 
-    threshold = 100  # uncomment for density, particle number
+    threshold = 100  # uncomment for everything else?
     # threshold = 5 * quantity / 1000  # uncomment for bulk semi-axes
 
     if exceed_threshold(np.max(rs_range) - np.min(rs_range), threshold):
@@ -169,10 +169,10 @@ def plot_coords(
     plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-    plt.title(
-        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} kg/m$^3$",
-        fontsize=15,
-    )  # uncomment for density
+    # plt.title(
+    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} kg/m$^3$",
+    #     fontsize=15,
+    # )  # uncomment for density
 
     # plt.title(
     #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} m",
@@ -183,6 +183,11 @@ def plot_coords(
     #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles",
     #     fontsize=15,
     # )  # uncomment for number of particles
+
+    plt.title(
+        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, $e = ${quantity}",
+        fontsize=15,
+    )  # uncomment for coefficient of restitution
 
     plt.legend(loc="lower right")
     plt.savefig(
@@ -222,10 +227,10 @@ def plot_coords(
     plt.ylabel(rf"${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-    plt.title(
-        f"Mean in {dimension}-displacements of {particles} particles, {quantity} kg/m$^3$\n",
-        fontsize=15,
-    )  # uncomment for density
+    # plt.title(
+    #     f"Mean in {dimension}-displacements of {particles} particles, {quantity} kg/m$^3$\n",
+    #     fontsize=15,
+    # )  # uncomment for density
 
     # plt.title(
     #     f"Mean in {dimension}-displacements of {particles} particles\n",
@@ -237,7 +242,12 @@ def plot_coords(
     #     fontsize=15,
     # )  # uncomment for bulk semi-axes
 
-    plt.legend(loc="lower right")
+    plt.title(
+        f"Mean in {dimension}-displacements of {particles} particles, $e = $ {quantity}\n",
+        fontsize=15,
+    )  # uncomment for coefficient of restitution
+
+    plt.legend(loc="best")
     plt.savefig(
         f"./{dimension}_positions_mean.png", format="png", dpi=150, bbox_inches="tight"
     )
@@ -262,7 +272,9 @@ def get_cluster_data(dimension: str, avg_type: str):
             data = np.array([line.strip("\n").split(" ") for line in file.readlines()])
         data = [float(val) * au_km for val in data.T[dimension_key[dimension]]]
         if avg_type == "mean":
-            # rbp_coords[frame] = (np.max(data) + np.min(data)) / 2  # different way to calculate avg
+            # rbp_coords[frame] = (
+            #     np.max(data) + np.min(data)
+            # ) / 2  # different way to calculate avg
             rbp_coords[frame] = np.average(data)
         elif avg_type == "range":
             rbp_coords[frame] = np.ptp(data)
@@ -281,8 +293,13 @@ def main():
     particles = int(data[5][1][2:])
     density = float(data[6][3][8:])
 
-    quantity = float(density)  # uncomment for density
-    in_quantity = int(data[1][1][6:])  # uncomment for density
+    quantity = (
+        int(os.getcwd().split("/")[-1]) / 100
+    )  # uncomment for coefficient of restitution
+    in_quantity = float(quantity)  # uncomment for coefficient of resitution
+
+    # quantity = float(density)  # uncomment for density
+    # in_quantity = int(data[1][1][6:])  # uncomment for density
 
     # quantity = float(
     #     np.average(list(map(float, data[5][0][9:-1].split(","))))
