@@ -151,7 +151,7 @@ def main():
     #################
 
     plt.xlim([np.min(quantity), np.max(quantity)])
-
+    plt.ylim([(np.min(closest_distance))-.2e5, np.max(roche_limit)+.2e5])
     plt.xlabel("Coefficient of restitution", fontsize=13)
 
     plt.title(
