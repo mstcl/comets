@@ -58,8 +58,8 @@ def get_coords(quantity, particles):
     rs_std, rs_average = get_coords_avg()
     plot_coords("r", rs_average, quantity, particles, rs_std)
 
-    threshold = 100  # uncomment for density
-    threshold = 5 * quantity / 1000  # uncomment for bulk semi-axes
+    threshold = 100  # uncomment for density, particle number
+    # threshold = 5 * quantity / 1000  # uncomment for bulk semi-axes
 
     if exceed_threshold(np.max(rs_range) - np.min(rs_range), threshold):
         index_disrupted = get_index_disrupted(rs_std)
@@ -147,8 +147,10 @@ def plot_coords(
         label="average",
         ms=0.5,
     )
+
     index_smallest_diff_rigid = helper.smallest_index(positions, 0, last, roche_rigid)
     index_smallest_diff_fluid = helper.smallest_index(positions, 0, last, roche_fluid)
+
     plt.axvline(
         index_smallest_diff_rigid,
         color="g",
@@ -166,15 +168,10 @@ def plot_coords(
     plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-    # plt.title(
-    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} kg/m$^3$",
-    #     fontsize=15,
-    # )  # uncomment for density
-
     plt.title(
-        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} m",
+        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {density} kg/m$^3$",
         fontsize=15,
-    )  # uncomment for bulk semi-axes
+    )
 
     plt.legend(loc="lower right")
     plt.savefig(f"./{dimension}_positions_range.png", format="png", dpi=150)
@@ -209,15 +206,10 @@ def plot_coords(
     plt.ylabel(rf"${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-    # plt.title(
-    #     f"Mean in {dimension}-displacements of {particles} particles, {density} kg/m$^3$\n",
-    #     fontsize=15,
-    # )  # uncomment for density
-
     plt.title(
-        f"Mean in {dimension}-displacements of {particles} particles, {density} m\n",
+        f"Mean in {dimension}-displacements of {particles} particles, {density} kg/m$^3$\n",
         fontsize=15,
-    )  #  uncomment for bulk semi-axes
+    )
 
     plt.legend(loc="lower right")
     plt.savefig(f"./{dimension}_positions_mean.png", format="png", dpi=150)
@@ -263,12 +255,15 @@ def main():
     # quantity = float(data[6][3][8:])  # uncomment for density
     # in_quantity = int(data[1][0][9:])  # uncomment for density
 
-    quantity = float(
-        np.average(list(map(float, data[5][0][9:-1].split(","))))
-    )  # uncomment for bulk semi-axes
-    in_quantity = int(
-        np.average(list(map(float, data[1][0][9:-1].split(","))))
-    )  # uncomment bulk semi-axes
+    # quantity = float(
+    #     np.average(list(map(float, data[5][0][9:-1].split(","))))
+    # )  # uncomment for bulk semi-axes
+    # in_quantity = int(
+    #     np.average(list(map(float, data[1][0][9:-1].split(","))))
+    # )  # uncomment bulk semi-axes
+
+    quantity = int(particles)  # uncomment for particle number
+    in_quantity = int(data[1][2][3:])  # uncomment for particle number
 
     roche_distance, error, closest = get_coords(quantity, particles)
     information = [
