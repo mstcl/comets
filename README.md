@@ -105,16 +105,17 @@ completeness, however, this does apply to some:
 ### Post-run data analysis
 
 Once all simulations within the range provided are completed, `results.txt`
-will be populated (all results are appended, not overwritten, this means if
-everything is run, there will be many duplicates. If this is a problem or
-annoyance, simply delete the content of the file (or copy it elsewhere, but
-don't remove `results.txt`!). Ideally, I could've used set() somewhere on the
-third column (the measured value), keeping the parity of everything else, but
-this is a non-issue for me.). To plot the Roche limit vs. density (or whichever
-variable we're varying), run the following:
+will be created if necessary and populated (all results are appended, not
+overwritten, this means if everything is run, there will be many duplicates. If
+this is a problem or annoyance, simply delete the content of the file (or copy
+it elsewhere). Ideally, I could've used `set()` somewhere on the third column
+(the measured value), keeping the parity of everything else, but this is a
+non-issue for me.). To plot the Roche limit vs. density (or whichever variable
+we're varying) and view it directly (with any image viewer, this examples uses
+`feh`), run the following:
 
 ```shell
-$ ./scripts/plot_roche.py
+$ ./scripts/plot_roche.py && feh roche_limit_plot.png
 ```
 
 The file `./roche_limit_plot.png` will be generated. Copy and rename this if
