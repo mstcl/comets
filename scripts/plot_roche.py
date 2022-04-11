@@ -82,7 +82,8 @@ def main():
         ms=1,
         label="perijove",
     )
-    if minimum_quantity_no_disruption < 0:
+
+    if np.min(np.array(roche_limit)) < 0:
         plt.axvline(
             minimum_quantity_no_disruption,
             color="r",
@@ -96,9 +97,7 @@ def main():
     #  PARTICLE NUMBER  #
     #####################
 
-    plt.xlabel(
-        r"Number of particles", fontsize=13
-    )
+    plt.xlabel(r"Number of particles", fontsize=13)
 
     plt.title(
         "Effect of number of particles of a comet rubber pile on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
@@ -130,7 +129,11 @@ def main():
     )
 
     plt.plot(
-        dummy_quantity, roche_estimated_rigid, color="g", label="rigid satellite", alpha=0.2
+        dummy_quantity,
+        roche_estimated_rigid,
+        color="g",
+        label="rigid satellite",
+        alpha=0.2,
     )
 
     plt.plot(
