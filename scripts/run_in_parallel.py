@@ -33,9 +33,9 @@ async def main():
         data = [line.strip("\n") for line in file.readlines()]
 
     # This should point to the correct lines in initiate.py
-    start_val = int(data[62].split(" = ")[-1])
-    end_val = int(data[63].split(" = ")[-1])
-    step = int(data[64].split(" = ")[-1])
+    start_val = int(data[69].split(" = ")[-1])
+    end_val = int(data[70].split(" = ")[-1])
+    step = int(data[71].split(" = ")[-1])
 
     groups = [
         [start_val + (step * 10) * i + step, start_val + (step * 10) * (i + 1)]
