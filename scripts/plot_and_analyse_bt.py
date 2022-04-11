@@ -14,9 +14,8 @@ from modules import helper
 
 
 def get_coords_range():
-    """TODO: Docstring for get_coords_range.
-    :returns: TODO
-
+    """
+    Return range in radius
     """
     xs_range = get_cluster_data("x", "range")
     ys_range = get_cluster_data("y", "range")
@@ -170,20 +169,20 @@ def plot_coords(
     plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-    # plt.title(
-    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} kg/m$^3$",
-    #     fontsize=15,
-    # )  # uncomment for density
+    plt.title(
+        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} kg/m$^3$",
+        fontsize=15,
+    )  # uncomment for density
 
     # plt.title(
     #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} m",
     #     fontsize=15,
     # )  # uncomment for bulk semi-axes
 
-    plt.title(
-        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles",
-        fontsize=15,
-    )  # uncomment for number of particles
+    # plt.title(
+    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles",
+    #     fontsize=15,
+    # )  # uncomment for number of particles
 
     plt.legend(loc="lower right")
     plt.savefig(
@@ -223,15 +222,15 @@ def plot_coords(
     plt.ylabel(rf"${dimension}$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-    # plt.title(
-    #     f"Mean in {dimension}-displacements of {particles} particles, {quantity} kg/m$^3$\n",
-    #     fontsize=15,
-    # )  # uncomment for density
-
     plt.title(
-        f"Mean in {dimension}-displacements of {particles} particles\n",
+        f"Mean in {dimension}-displacements of {particles} particles, {quantity} kg/m$^3$\n",
         fontsize=15,
-    )  # uncomment for number of particles
+    )  # uncomment for density
+
+    # plt.title(
+    #     f"Mean in {dimension}-displacements of {particles} particles\n",
+    #     fontsize=15,
+    # )  # uncomment for number of particles
 
     # plt.title(
     #     f"Mean in {dimension}-displacements of {particles} particles, {quantity} m\n",
@@ -280,10 +279,10 @@ def main():
     with open("./sl9_stats.txt", "r", encoding="utf-8") as file:
         data = [line.strip("\n").split(" ") for line in file.readlines()]
     particles = int(data[5][1][2:])
-    density = float(data[6][3][8:])  # uncomment for density
+    density = float(data[6][3][8:])
 
-    # quantity = float(density)  # uncomment for density
-    # in_quantity = int(data[1][0][9:])  # uncomment for density
+    quantity = float(density)  # uncomment for density
+    in_quantity = int(data[1][1][6:])  # uncomment for density
 
     # quantity = float(
     #     np.average(list(map(float, data[5][0][9:-1].split(","))))
@@ -292,8 +291,8 @@ def main():
     #     np.average(list(map(float, data[1][0][9:-1].split(","))))
     # )  # uncomment bulk semi-axes
 
-    quantity = int(particles)  # uncomment for particle number
-    in_quantity = int(data[1][2][3:])  # uncomment for particle number
+    # quantity = int(particles)  # uncomment for particle number
+    # in_quantity = int(data[1][2][3:])  # uncomment for particle number
 
     roche_distance, error, closest = get_coords(quantity, particles, density)
     information = [
