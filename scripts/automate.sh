@@ -3,8 +3,8 @@
 # To simply redo any part of the process without redoing everything, comment out the appropriate lines
 # But keep the sleep commands or else there might be errors with python opening and closing files
 
-# To change the coefficient of restitution, it is uncessary to run step 1-3 in each sim directory,
-# however, it is still necessary to run it in default
+# To change the coefficient of restitution, it is uncessary to run step 1 and 3 in each sim directory,
+# however, it is still necessary to run it in default first before initiate.py
 
 ############
 #  1. RPG  #
@@ -13,13 +13,13 @@
 # ../scripts/rpg > sl9_stats.txt
 # echo "• rpg run & sl9_stats.txt generated."
 
-##############################
-#  2. CHANGE DYNAMICAL TIME  #
-##############################
+#############################
+# 2. CHANGE DYNAMICAL TIME  #
+#############################
 
-# sleep 0.1
-# ../scripts/get_dynamical_time.py > /dev/null 2>&1
-# echo "• dDelta in ss.par updated."
+sleep 0.1
+../scripts/get_dynamical_time.py > /dev/null 2>&1
+echo "• dDelta in ss.par updated."
 
 ###########################
 #  3. INITIAL CONDITIONS  #

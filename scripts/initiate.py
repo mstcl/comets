@@ -69,7 +69,7 @@ def change_value(start: int, end: int, step: int):
 if __name__ == "__main__":
     START_VALUE = 0
     END_VALUE = 100
-    STEP = 5
+    STEP = 1
     make_directories(START_VALUE, END_VALUE, STEP)
     copy_files(START_VALUE, END_VALUE, STEP)
     # change_value(
