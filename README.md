@@ -9,6 +9,7 @@ planet used is Jupiter and the comet Shoemaker-Levy 9.
 - python3
 - `numpy`
 - `matplotlib`
+- ffmpeg (for stitching together a video of simulation)
 - POSIX-compliant systems for shell scripts.
 
 ## Required but not provided
