@@ -28,8 +28,8 @@ def main():
     data[9][1] = f"= {ddelta}"
 
     # uncomment this block to vary normal coefficient of restitution
-    current_val = int(os.getcwd().split("/")[-1])/100
-    data[61][1] = f"= {current_val}"
+    # current_val = int(os.getcwd().split("/")[-1])/100
+    # data[61][1] = f"= {current_val}"
 
     with open("ss.par", "w", encoding="utf-8") as sspar:
         sspar.writelines(["\t\t".join(line) for line in data])
