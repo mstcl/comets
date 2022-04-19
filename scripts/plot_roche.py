@@ -24,18 +24,11 @@ def main():
     quantity, roche_limit, errors = zip(*sorted(zip(quantity, roche_limit, errors)))
     minimum_quantity_no_disruption = quantity[np.array(roche_limit).argmin()]
     quantity = np.array(quantity)
-    dummy_quantity = np.linspace(100, 1000, 100)
+    dummy_quantity = np.linspace(np.min(quantity), np.max(quantity), 100)
     closest_distance = [99305.6547187192] * len(dummy_quantity)
 
     rho_jupiter = 1326
     r_jupiter = 71492000
-
-    roche_estimated_rigid = (
-        r_jupiter * (2 * (rho_jupiter / dummy_quantity)) ** (1 / 3) / 1000
-    )
-    roche_estimated_fluid = (
-        r_jupiter * 2.4823 * (rho_jupiter / dummy_quantity) ** (1 / 3) / 1000
-    )
 
     ########################
     #  GENERAL PLOT STUFF  #
@@ -46,7 +39,6 @@ def main():
 
     plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
 
-    plt.ylim([np.max(closest_distance) - 2e04, np.min(roche_estimated_fluid) + 4e04])
     plt.xlim([np.min(quantity) - 30, np.max(quantity) + 30])
 
     plt.ylabel(r"Disruption distance at threshold separation / km", fontsize=13)
@@ -97,12 +89,12 @@ def main():
     #  PARTICLE NUMBER  #
     #####################
 
-    plt.xlabel(r"Number of particles", fontsize=13)
+    # plt.xlabel("Number of particles", fontsize=13)
 
-    plt.title(
-        "Effect of number of particles of a comet rubber pile on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
-        fontsize=13,
-    )
+    # plt.title(
+    #     "Effect of number of particles of a comet rubber pile on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
+    #     fontsize=13,
+    # )
 
     ####################
     #  BULK SEMI-AXES  #
@@ -120,6 +112,15 @@ def main():
     #############
     #  DENSITY  #
     #############
+
+    roche_estimated_rigid = (
+        r_jupiter * (2 * (rho_jupiter / dummy_quantity)) ** (1 / 3) / 1000
+    )
+    roche_estimated_fluid = (
+        r_jupiter * 2.4823 * (rho_jupiter / dummy_quantity) ** (1 / 3) / 1000
+    )
+
+    plt.ylim([np.max(closest_distance) - 2e04, np.min(roche_estimated_fluid) + 4e04])
 
     plt.xlabel(r"Comet's bulk density / kg/m$^3$", fontsize=13)
 
@@ -144,12 +145,25 @@ def main():
         alpha=0.2,
     )
 
+    #################
+    #  RESTITUTION  #
+    #################
+
+    # plt.xlim([np.min(quantity), np.max(quantity)])
+
+    # plt.xlabel("Coefficient of restitution", fontsize=13)
+
+    # plt.title(
+    #     "Effect of coefficient of restitution of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
+    #     fontsize=13,
+    # )
+
     #######################
     #  ADD LEGEND & SAVE  #
     #######################
 
     plt.legend(loc="best", fontsize="small")
-    plt.savefig("./roche_limit_plot.png", format="png", dpi=150)
+    plt.savefig("./roche_limit_plot.png", format="png", dpi=150, bbox_inches="tight")
 
 
 if __name__ == "__main__":
