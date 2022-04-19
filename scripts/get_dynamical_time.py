@@ -9,6 +9,17 @@ from modules import helper
 import numpy as np
 
 
+def get_ddelta():
+    """
+    Retrieve ddelta
+    """
+    with open("sl9_stats.txt", "r", encoding="utf-8") as stats:
+        data = [line.split("=") for line in stats.readlines()]
+    return np.format_float_scientific(
+        float(data[15][1][1:-1]) / 10 / 5020000, precision=1
+    )
+
+
 def main():
     """
     Calculate dDelta from dynamical time
@@ -17,12 +28,7 @@ def main():
     files = ["sl9_stats.txt", "ss.par"]
     for file in files:
         helper.check_file(file)
-    with open("sl9_stats.txt", "r", encoding="utf-8") as stats:
-        data = [line.split("=") for line in stats.readlines()]
-    ddelta = np.format_float_scientific(
-        float(data[15][1][1:-1]) / 10 / 5020000, precision=1
-    )
-
+    ddelta = get_ddelta()
     with open("ss.par", "r", encoding="utf-8") as sspar:
         data = [line.split("\t\t") for line in sspar.readlines()]
     data[9][1] = f"= {ddelta}"
@@ -35,7 +41,5 @@ def main():
         sspar.writelines(["\t\t".join(line) for line in data])
 
 
-
 if __name__ == "__main__":
     main()
-
