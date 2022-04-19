@@ -11,6 +11,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 from modules import helper
+import get_dynamical_time
 
 
 def get_coords_range():
@@ -55,7 +56,7 @@ def get_coords(quantity, particles: int, density: float):
     """
     rs_range = get_coords_range()
     rs_std, rs_average = get_coords_avg()
-    plot_coords("r", rs_average, quantity, particles, rs_std, density)
+    plot_coords(rs_range, rs_average, quantity, particles, rs_std, density)
 
     threshold = 100  # uncomment for everything else?
     # threshold = 5 * quantity / 1000  # uncomment for bulk semi-axes
@@ -119,7 +120,7 @@ def calculate_roche_limit(density: float):
 
 
 def plot_coords(
-    dimension: str,
+    rs_range: np.ndarray,
     positions: np.ndarray,
     quantity: float,
     particles: int,
@@ -130,13 +131,89 @@ def plot_coords(
     Produce a plot with matplotlib
     """
     frames = 500
-    timesteps = [n + 1 for n in range(frames)]
+    ddelta = np.float64(get_dynamical_time.get_ddelta())
+    timesteps = np.array([n * ddelta * 502000 for n in range(frames)])
 
     last = None
     if positions.argmin() != 0:
         last = positions.argmin() + 1
 
     roche_rigid, roche_fluid = calculate_roche_limit(density)
+
+    plt.clf()
+    extrap = helper.get_line(timesteps, rs_range)[0]
+    observations = [(2.266272e7, 2.283552e7, 2.300832e7), (164e3, 166e3, 168e3)]
+    extrap_arr = [val*extrap[0]+extrap[1] for val in observations[0]]
+    plt.plot(observations[0], observations[1], "c-", ms=0.5, label="observations")
+    plt.plot(
+        observations[0],
+        extrap_arr,
+        "ro",
+        label="observations",
+    )
+    plt.ylabel(r"$\Delta r$ / km", fontsize=13)
+    plt.xlabel(r"Time / seconds", fontsize=13)
+
+    plt.title(
+        "Simulated vs observed train length",
+        fontsize=15,
+    )
+    plt.legend(loc="lower right")
+    plt.savefig("./r_range_extrapolated.png", format="png", dpi=150, bbox_inches="tight")
+
+    plt.clf()
+    plt.tight_layout()
+    plt.plot(
+        timesteps,
+        rs_range,
+        "cx",
+        label="range",
+        ms=0.5,
+    )
+
+    index_smallest_diff_rigid = helper.smallest_index(positions, 0, last, roche_rigid)
+    index_smallest_diff_fluid = helper.smallest_index(positions, 0, last, roche_fluid)
+
+    plt.axvline(
+        index_smallest_diff_rigid * ddelta * 502000,
+        color="g",
+        linestyle="-",
+        linewidth=1,
+        label="rigid body",
+    )
+    plt.axvline(
+        index_smallest_diff_fluid * ddelta * 502000,
+        color="y",
+        linestyle="-",
+        linewidth=1,
+        label="fluid body",
+    )
+
+    plt.ylabel(r"$\Delta$ $r$ / km", fontsize=13)
+    plt.xlabel(r"Time / seconds", fontsize=13)
+
+    plt.title(
+        f"Range in displacements\n of {particles} particles, {quantity} kg/m$^3$",
+        fontsize=15,
+    )  # uncomment for density
+
+    # plt.title(
+    #     f"Range in displacements\n of {particles} particles, {quantity} m",
+    #     fontsize=15,
+    # )  # uncomment for bulk semi-axes
+
+    # plt.title(
+    #     f"Range in displacements\n of {particles} particles",
+    #     fontsize=15,
+    # )  # uncomment for number of particles
+
+    # plt.title(
+    #     f"Range in displacements\n of {particles} particles, $e = ${quantity}",
+    #     fontsize=15,
+    # )  # uncomment for coefficient of restitution
+
+    plt.legend(loc="lower right")
+    plt.savefig("./r_positions_range.png", format="png", dpi=150, bbox_inches="tight")
 
     plt.clf()
     plt.tight_layout()
@@ -152,47 +229,59 @@ def plot_coords(
     index_smallest_diff_fluid = helper.smallest_index(positions, 0, last, roche_fluid)
 
     plt.axvline(
-        index_smallest_diff_rigid,
+        index_smallest_diff_rigid * ddelta * 502000,
         color="g",
         linestyle="-",
         linewidth=1,
         label="rigid body",
     )
     plt.axvline(
-        index_smallest_diff_fluid,
+        index_smallest_diff_fluid * ddelta * 502000,
         color="y",
         linestyle="-",
         linewidth=1,
         label="fluid body",
     )
 
-    plt.ylabel(rf"$\Delta$ ${dimension}$ / km", fontsize=13)
+    plt.ylabel(r"$\Delta$ $r$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
+<<<<<<< HEAD
     # plt.title(
     #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} kg/m$^3$",
     #     fontsize=15,
     # )  # uncomment for density
+=======
+    plt.title(
+        f"4th differential of standard deviations in displacements\n of {particles} particles, {quantity} kg/m$^3$",
+        fontsize=15,
+    )  # uncomment for density
+>>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     # plt.title(
-    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} m",
+    #     f"4th differential of standard deviations in displacements\n of {particles} particles, {quantity} m",
     #     fontsize=15,
     # )  # uncomment for bulk semi-axes
 
     # plt.title(
-    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles",
+    #     f"4th differential of standard deviations in displacements\n of {particles} particles",
     #     fontsize=15,
     # )  # uncomment for number of particles
 
+<<<<<<< HEAD
     plt.title(
         f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, $e = ${quantity}",
         fontsize=15,
     )  # uncomment for coefficient of restitution
+=======
+    # plt.title(
+    #     f"4th differential of standard deviations in displacements\n of {particles} particles, $e = ${quantity}",
+    #     fontsize=15,
+    # )  # uncomment for coefficient of restitution
+>>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     plt.legend(loc="lower right")
-    plt.savefig(
-        f"./{dimension}_positions_range.png", format="png", dpi=150, bbox_inches="tight"
-    )
+    plt.savefig("./r_positions_std.png", format="png", dpi=150, bbox_inches="tight")
 
     plt.clf()
     plt.errorbar(
@@ -209,7 +298,7 @@ def plot_coords(
     index_smallest_diff_fluid = helper.smallest_index(positions, 0, last, roche_fluid)
 
     plt.axvline(
-        index_smallest_diff_rigid,
+        index_smallest_diff_rigid * ddelta * 502000,
         color="g",
         linestyle="-",
         linewidth=1,
@@ -217,40 +306,52 @@ def plot_coords(
     )
 
     plt.axvline(
-        index_smallest_diff_fluid,
+        index_smallest_diff_fluid * ddelta * 502000,
         color="y",
         linestyle="-",
         linewidth=1,
         label="fluid body",
     )
 
-    plt.ylabel(rf"${dimension}$ / km", fontsize=13)
+    plt.ylabel(r"$r$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
+<<<<<<< HEAD
     # plt.title(
     #     f"Mean in {dimension}-displacements of {particles} particles, {quantity} kg/m$^3$\n",
     #     fontsize=15,
     # )  # uncomment for density
+=======
+    plt.title(
+        f"Mean in displacements of {particles} particles, {quantity} kg/m$^3$\n",
+        fontsize=15,
+    )  # uncomment for density
+>>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     # plt.title(
-    #     f"Mean in {dimension}-displacements of {particles} particles\n",
+    #     f"Mean in displacements of {particles} particles\n",
     #     fontsize=15,
     # )  # uncomment for number of particles
 
     # plt.title(
-    #     f"Mean in {dimension}-displacements of {particles} particles, {quantity} m\n",
+    #     f"Mean in displacements of {particles} particles, {quantity} m\n",
     #     fontsize=15,
     # )  # uncomment for bulk semi-axes
 
+<<<<<<< HEAD
     plt.title(
         f"Mean in {dimension}-displacements of {particles} particles, $e = $ {quantity}\n",
         fontsize=15,
     )  # uncomment for coefficient of restitution
+=======
+    # plt.title(
+    #     f"Mean in displacements of {particles} particles, $e = $ {quantity}\n",
+    #     fontsize=15,
+    # )  # uncomment for coefficient of restitution
+>>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     plt.legend(loc="best")
-    plt.savefig(
-        f"./{dimension}_positions_mean.png", format="png", dpi=150, bbox_inches="tight"
-    )
+    plt.savefig("./r_positions_mean.png", format="png", dpi=150, bbox_inches="tight")
 
 
 def get_cluster_data(dimension: str, avg_type: str):
@@ -312,15 +413,15 @@ def main():
     # in_quantity = int(data[1][2][3:])  # uncomment for particle number
 
     roche_distance, error, closest = get_coords(quantity, particles, density)
-    information = [
-        str(particles),
-        str(quantity),
-        str(roche_distance),
-        str(error),
-        str(closest),
-        f"{in_quantity}\n",
-    ]
-    write_results(information)
+    # information = [
+    #     str(particles),
+    #     str(quantity),
+    #     str(roche_distance),
+    #     str(error),
+    #     str(closest),
+    #     f"{in_quantity}\n",
+    # ]
+    # write_results(information)
 
 
 def write_results(information: list):
