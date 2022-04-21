@@ -54,11 +54,11 @@ def change_value(start: int, end: int, step: int):
         with open(f"./{val}/rpg.par", "r", encoding="utf-8") as file:
             data = [line.split("\t\t") for line in file.readlines()]
 
-        data[36][1] = str(val)  # uncomment to change to density
+        # data[36][1] = str(val)  # uncomment to change to density
 
-        # data[38][
-        #     1
-        # ] = f"{str(val)} {str(val)} {str(val)}"  # uncomment to change to bulk semi-axes
+        data[38][
+            1
+        ] = f"{str(val)} {str(val)} {str(val)}"  # uncomment to change to bulk semi-axes
 
         # data[39][1] = str(val)  # uncomment to change to particle number
 
@@ -67,7 +67,7 @@ def change_value(start: int, end: int, step: int):
 
 
 if __name__ == "__main__":
-    START_VALUE = 80
+    START_VALUE = 400
     END_VALUE = 1000
     STEP = 5
     make_directories(START_VALUE, END_VALUE, STEP)

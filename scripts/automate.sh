@@ -49,9 +49,9 @@ echo "• non-bin files converted."
 #  6. CREATE A VIDEO OUTPUT FILE (OPTIONAL)  #
 ##############################################
 
-sleep 0.1
-../scripts/draw.sh > /dev/null 2>&1
-echo "• movie generated."
+# sleep 0.1
+# ../scripts/draw.sh > /dev/null 2>&1
+# echo "• movie generated."
 
 ######################
 #  7. DATA ANALYSIS  #
