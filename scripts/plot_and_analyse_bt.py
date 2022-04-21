@@ -246,17 +246,10 @@ def plot_coords(
     plt.ylabel(r"$\Delta$ $r$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-<<<<<<< HEAD
-    # plt.title(
-    #     f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, {quantity} kg/m$^3$",
-    #     fontsize=15,
-    # )  # uncomment for density
-=======
     plt.title(
         f"4th differential of standard deviations in displacements\n of {particles} particles, {quantity} kg/m$^3$",
         fontsize=15,
     )  # uncomment for density
->>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     # plt.title(
     #     f"4th differential of standard deviations in displacements\n of {particles} particles, {quantity} m",
@@ -268,17 +261,10 @@ def plot_coords(
     #     fontsize=15,
     # )  # uncomment for number of particles
 
-<<<<<<< HEAD
-    plt.title(
-        f"4th differential of standard deviations in {dimension}-displacements\n of {particles} particles, $e = ${quantity}",
-        fontsize=15,
-    )  # uncomment for coefficient of restitution
-=======
     # plt.title(
     #     f"4th differential of standard deviations in displacements\n of {particles} particles, $e = ${quantity}",
     #     fontsize=15,
     # )  # uncomment for coefficient of restitution
->>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     plt.legend(loc="lower right")
     plt.savefig("./r_positions_std.png", format="png", dpi=150, bbox_inches="tight")
@@ -316,17 +302,10 @@ def plot_coords(
     plt.ylabel(r"$r$ / km", fontsize=13)
     plt.xlabel(r"Timestep / frame", fontsize=13)
 
-<<<<<<< HEAD
-    # plt.title(
-    #     f"Mean in {dimension}-displacements of {particles} particles, {quantity} kg/m$^3$\n",
-    #     fontsize=15,
-    # )  # uncomment for density
-=======
     plt.title(
         f"Mean in displacements of {particles} particles, {quantity} kg/m$^3$\n",
         fontsize=15,
     )  # uncomment for density
->>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     # plt.title(
     #     f"Mean in displacements of {particles} particles\n",
@@ -338,17 +317,10 @@ def plot_coords(
     #     fontsize=15,
     # )  # uncomment for bulk semi-axes
 
-<<<<<<< HEAD
-    plt.title(
-        f"Mean in {dimension}-displacements of {particles} particles, $e = $ {quantity}\n",
-        fontsize=15,
-    )  # uncomment for coefficient of restitution
-=======
     # plt.title(
     #     f"Mean in displacements of {particles} particles, $e = $ {quantity}\n",
     #     fontsize=15,
     # )  # uncomment for coefficient of restitution
->>>>>>> 40728d2 (Added: allow plotting of observational data)
 
     plt.legend(loc="best")
     plt.savefig("./r_positions_mean.png", format="png", dpi=150, bbox_inches="tight")
@@ -413,15 +385,15 @@ def main():
     # in_quantity = int(data[1][2][3:])  # uncomment for particle number
 
     roche_distance, error, closest = get_coords(quantity, particles, density)
-    # information = [
-    #     str(particles),
-    #     str(quantity),
-    #     str(roche_distance),
-    #     str(error),
-    #     str(closest),
-    #     f"{in_quantity}\n",
-    # ]
-    # write_results(information)
+    information = [
+        str(particles),
+        str(quantity),
+        str(roche_distance),
+        str(error),
+        str(closest),
+        f"{in_quantity}\n",
+    ]
+    write_results(information)
 
 
 def write_results(information: list):
