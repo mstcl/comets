@@ -34,11 +34,11 @@
 #
 # Create an array of close packed touching spheres
 #
-Bulk density		500		# in kg/m^3
+Bulk density		470		# in kg/m^3
 Particle density	0		# in kg/m^3
 Bulk semi-axes		0 0 0		# in m (use -ve values for axis ratios)
 Number of particles		500		# this is only a hint
-Particle radius		100		# in m
+Particle radius		0		# in m
 #
 # Now create an array of non-touching particles with voids.
 # The particle radius will be shrunk by this factor

@@ -21,7 +21,7 @@ def main():
     plt.tight_layout()
     # plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
     # plt.xlim([np.min(radius) - 30, np.max(radius) + 30])
-    plt.ylabel(r"Range of extreme particles at end of simulation / km", fontsize=13)
+    plt.ylabel(r"Length at end of simulation / km", fontsize=15)
     plt.plot(
         radius,
         final_range,
@@ -30,12 +30,12 @@ def main():
         ls="None",
         ms=1,
     )
-    plt.xlabel(
-        r"Comet's average radius / m", fontsize=13
-    )
+    plt.xlabel(r"Comet's average radius / m", fontsize=15)
+    plt.xticks(fontsize=13)
+    plt.yticks(fontsize=13)
     plt.title(
         "Effect of radius on comet's final disrupted length",
-        fontsize=13,
+        fontsize=15,
     )
     plt.savefig("./final_range.png", format="png", dpi=150, bbox_inches="tight")
 

@@ -57,13 +57,13 @@ def get_coords(quantity, particles: int, density: float):
     rs_range = get_coords_range()
     rs_std, rs_average = get_coords_avg()
 
-    # information = [str(quantity), f"{rs_range[-1]}\n"]
-    # write_final_range(information)
+    information = [str(quantity), f"{rs_range[-1]}\n"]
+    write_final_range(information)
 
     plot_coords(rs_range, rs_average, quantity, particles, rs_std, density)
 
-    threshold = 100  # uncomment for everything else?
-    # threshold = 5 * quantity / 1000  # uncomment for bulk semi-axes
+    # threshold = 100  # uncomment for everything else?
+    threshold = 5 * quantity / 1000  # uncomment for bulk semi-axes
 
     if exceed_threshold(np.max(rs_range) - np.min(rs_range), threshold):
         index_disrupted = get_index_disrupted(rs_std)
@@ -145,8 +145,8 @@ def plot_coords(
     roche_rigid, roche_fluid = calculate_roche_limit(density)
 
     plt.clf()
-    extrap = helper.get_line(timesteps, rs_range)[0]
-    observations = [(2.266272e7, 2.283552e7, 2.300832e7), (164e3, 166e3, 168e3)]
+    extrap = helper.get_line(timesteps[250:], rs_range[250:])[0]
+    observations = [(2.162592e7, 2.179872e7, 2.197152e7), (164e3, 166e3, 168e3)]
     extrap_arr = [val * extrap[0] + extrap[1] for val in observations[0]]
     plt.plot(observations[0], observations[1], "c-", ms=0.5, label="observations")
     plt.plot(
@@ -155,14 +155,18 @@ def plot_coords(
         "ro",
         label="extrapolated",
     )
-    plt.ylabel(r"$\Delta r$ / km", fontsize=13)
-    plt.xlabel(r"Time / seconds", fontsize=13)
+    plt.ylabel(r"$\Delta r$ / km", fontsize=15)
+    plt.xlabel(r"Time / seconds", fontsize=15)
 
+    plt.xticks(fontsize=13)
+    plt.yticks(fontsize=13)
+    plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
+    plt.ticklabel_format(axis="x", style="sci", scilimits=(0, 0))
     plt.title(
-        f"Simulated vs observed train length, radius {round(quantity,2)} m",
+        f"Simulated vs observed\ntrain length, radius {round(quantity,2)} m",
         fontsize=15,
     )
-    plt.legend(loc="lower right")
+    plt.legend(loc="best", fontsize=15)
     plt.savefig(
         "./r_range_extrapolated.png", format="png", dpi=150, bbox_inches="tight"
     )
@@ -195,18 +199,22 @@ def plot_coords(
         label="fluid body",
     )
 
-    plt.ylabel(r"$\Delta$ $r$ / km", fontsize=13)
-    plt.xlabel(r"Time / seconds", fontsize=13)
+    plt.ylabel(r"$\Delta$ $r$ / km", fontsize=15)
+    plt.xlabel(r"Time / seconds", fontsize=15)
+
+    plt.xticks(fontsize=13)
+    plt.yticks(fontsize=13)
+    plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
+    plt.ticklabel_format(axis="x", style="sci", scilimits=(0, 0))
+    # plt.title(
+    #     f"Range in displacements\n of {particles} particles, {quantity} kg/m$^3$",
+    #     fontsize=15,
+    # )  # uncomment for density
 
     plt.title(
-        f"Range in displacements\n of {particles} particles, {quantity} kg/m$^3$",
+        f"Range in displacements\n of {particles} particles, {round(quantity,2)} m",
         fontsize=15,
-    )  # uncomment for density
-
-    # plt.title(
-    #     f"Range in displacements\n of {particles} particles, {round(quantity,2)} m",
-    #     fontsize=15,
-    # )  # uncomment for bulk semi-axes
+    )  # uncomment for bulk semi-axes
 
     # plt.title(
     #     f"Range in displacements\n of {particles} particles",
@@ -218,7 +226,7 @@ def plot_coords(
     #     fontsize=15,
     # )  # uncomment for coefficient of restitution
 
-    plt.legend(loc="lower right")
+    plt.legend(loc="best", fontsize=15)
     plt.savefig("./r_positions_range.png", format="png", dpi=150, bbox_inches="tight")
 
     plt.clf()
@@ -252,15 +260,19 @@ def plot_coords(
     plt.ylabel(r"$\Delta$ $r$ / km", fontsize=13)
     plt.xlabel(r"Time / seconds", fontsize=13)
 
-    plt.title(
-        f"4th differential of standard deviations in displacements\n of {particles} particles, {quantity} kg/m$^3$",
-        fontsize=15,
-    )  # uncomment for density
-
+    plt.xticks(fontsize=13)
+    plt.yticks(fontsize=13)
+    plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
+    plt.ticklabel_format(axis="x", style="sci", scilimits=(0, 0))
     # plt.title(
-    #     f"4th differential of standard deviations in displacements\n of {particles} particles, {round(quantity,2)} m",
+    #     f"4th differential of standard deviations in displacements\n of {particles} particles, {quantity} kg/m$^3$",
     #     fontsize=15,
-    # )  # uncomment for bulk semi-axes
+    # )  # uncomment for density
+
+    plt.title(
+        f"4th differential of standard deviations in displacements\n of {particles} particles, {round(quantity,2)} m",
+        fontsize=15,
+    )  # uncomment for bulk semi-axes
 
     # plt.title(
     #     f"4th differential of standard deviations in displacements\n of {particles} particles",
@@ -272,7 +284,7 @@ def plot_coords(
     #     fontsize=15,
     # )  # uncomment for coefficient of restitution
 
-    plt.legend(loc="lower right")
+    plt.legend(loc="best", fontsize=15)
     plt.savefig("./r_positions_std.png", format="png", dpi=150, bbox_inches="tight")
 
     plt.clf()
@@ -305,30 +317,34 @@ def plot_coords(
         label="fluid body",
     )
 
-    plt.ylabel(r"$r$ / km", fontsize=13)
-    plt.xlabel(r"Time / seconds", fontsize=13)
+    plt.ylabel(r"$r$ / km", fontsize=15)
+    plt.xlabel(r"Time / seconds", fontsize=15)
 
-    plt.title(
-        f"Mean in displacements of {particles} particles, {quantity} kg/m$^3$\n",
-        fontsize=15,
-    )  # uncomment for density
+    plt.xticks(fontsize=13)
+    plt.yticks(fontsize=13)
+    plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
+    plt.ticklabel_format(axis="x", style="sci", scilimits=(0, 0))
+    # plt.title(
+    #     f"Mean in displacements of {particles} particles, {quantity} kg/m$^3$\n",
+    #     fontsize=15,
+    # )  # uncomment for density
 
     # plt.title(
     #     f"Mean in displacements of {particles} particles\n",
     #     fontsize=15,
     # )  # uncomment for number of particles
 
-    # plt.title(
-    #     f"Mean in displacements of {particles} particles, {round(quantity,2)} m\n",
-    #     fontsize=15,
-    # )  # uncomment for bulk semi-axes
+    plt.title(
+        f"Mean in displacements of {particles} particles, {round(quantity,2)} m\n",
+        fontsize=15,
+    )  # uncomment for bulk semi-axes
 
     # plt.title(
     #     f"Mean in displacements of {particles} particles, $e = $ {quantity}\n",
     #     fontsize=15,
     # )  # uncomment for coefficient of restitution
 
-    plt.legend(loc="best")
+    plt.legend(loc="best", fontsize=15)
     plt.savefig("./r_positions_mean.png", format="png", dpi=150, bbox_inches="tight")
 
 
@@ -377,29 +393,29 @@ def main():
     # )  # uncomment for coefficient of restitution
     # in_quantity = float(quantity)  # uncomment for coefficient of resitution
 
-    quantity = float(density)  # uncomment for density
-    in_quantity = int(data[1][1][6:])  # uncomment for density
+    # quantity = float(density)  # uncomment for density
+    # in_quantity = int(data[1][1][6:])  # uncomment for density
 
-    # quantity = float(
-    #     np.average(list(map(float, data[5][0][9:-1].split(","))))
-    # )  # uncomment for bulk semi-axes
-    # in_quantity = int(
-    #     np.average(list(map(float, data[1][0][9:-1].split(","))))
-    # )  # uncomment bulk semi-axes
+    quantity = float(
+        np.average(list(map(float, data[5][0][9:-1].split(","))))
+    )  # uncomment for bulk semi-axes
+    in_quantity = int(
+        np.average(list(map(float, data[1][0][9:-1].split(","))))
+    )  # uncomment bulk semi-axes
 
     # quantity = int(particles)  # uncomment for particle number
     # in_quantity = int(data[1][2][3:])  # uncomment for particle number
 
     roche_distance, error, closest = get_coords(quantity, particles, density)
-    # information = [
-    #     str(particles),
-    #     str(quantity),
-    #     str(roche_distance),
-    #     str(error),
-    #     str(closest),
-    #     f"{in_quantity}\n",
-    # ]
-    # write_results(information)
+    information = [
+        str(particles),
+        str(quantity),
+        str(roche_distance),
+        str(error),
+        str(closest),
+        f"{in_quantity}\n",
+    ]
+    write_results(information)
 
 
 def write_results(information: list):

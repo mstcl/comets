@@ -30,19 +30,19 @@ def main():
     rho_jupiter = 1326
     r_jupiter = 71492000
 
-
     ########################
     #  GENERAL PLOT STUFF  #
     ########################
 
     plt.clf()
+    fig = plt.figure()
     plt.tight_layout()
 
     plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
 
     plt.xlim([np.min(quantity) - 30, np.max(quantity) + 30])
 
-    plt.ylabel(r"Disruption distance at threshold separation / km", fontsize=13)
+    plt.ylabel(r"Disruption distance at threshold separation / km", fontsize=15)
 
     plt.errorbar(
         quantity,
@@ -83,87 +83,96 @@ def main():
             linestyle="-",
             linewidth=1,
             alpha=0.2,
-            label="minimum distance of coalescence",
+            label=r"$1^{st}$ occurrence no disruption",
         )
 
     #####################
     #  PARTICLE NUMBER  #
     #####################
 
-    # plt.xlabel("Number of particles", fontsize=13)
+    # plt.xlabel("Number of particles", fontsize=15)
 
     # plt.title(
-    #     "Effect of number of particles of a comet rubber pile on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
-    #     fontsize=13,
+    #     "Effect of particle no. of a comet rubber pile on its Roche\nlimit (wrt Jupiter) as produced by pkdgrav",
+    #     fontsize=15,
     # )
 
     ####################
     #  BULK SEMI-AXES  #
     ####################
 
-    # plt.xlabel(
-    #     r"Comet's average radius / m", fontsize=13
-    # )
+    plt.xlabel(
+        r"Comet's average radius / m", fontsize=15
+    )
 
-    # plt.title(
-    #     "Effect of radius of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
-    #     fontsize=13,
-    # )
+    plt.title(
+        "Effect of radius of a comet on its Roche limit\nwrt Jupiter) as produced by pkdgrav",
+        fontsize=15,
+    )
 
     #############
     #  DENSITY  #
     #############
 
-    roche_estimated_rigid = (
-        r_jupiter * (2 * (rho_jupiter / dummy_quantity)) ** (1 / 3) / 1000
-    )
-    roche_estimated_fluid = (
-        r_jupiter * 2.4823 * (rho_jupiter / dummy_quantity) ** (1 / 3) / 1000
-    )
+    # roche_estimated_rigid = (
+    #     r_jupiter * (2 * (rho_jupiter / dummy_quantity)) ** (1 / 3) / 1000
+    # )
+    # roche_estimated_fluid = (
+    #     r_jupiter * 2.4823 * (rho_jupiter / dummy_quantity) ** (1 / 3) / 1000
+    # )
 
-    plt.ylim([np.max(closest_distance) - 2e04, np.min(roche_estimated_fluid) + 4e04])
+    # plt.ylim([np.max(closest_distance) - 2e04, np.min(roche_estimated_fluid) + 4e04])
 
-    plt.xlabel(r"Comet's bulk density / kg/m$^3$", fontsize=13)
+    # plt.xlabel(r"Comet's bulk density / kg/m$^3$", fontsize=15)
 
-    plt.title(
-        "Effect of bulk density of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
-        fontsize=13,
-    )
+    # plt.title(
+    #     "Effect of bulk density of a comet on its Roche limit\n (wrt Jupiter) as produced by pkdgrav",
+    #     fontsize=15,
+    # )
 
-    plt.plot(
-        dummy_quantity,
-        roche_estimated_rigid,
-        color="g",
-        label="rigid satellite",
-        alpha=0.2,
-    )
+    # plt.plot(
+    #     dummy_quantity,
+    #     roche_estimated_rigid,
+    #     color="g",
+    #     label="rigid satellite",
+    #     alpha=0.2,
+    # )
 
-    plt.plot(
-        dummy_quantity,
-        roche_estimated_fluid,
-        color="y",
-        label="fluid satellite",
-        alpha=0.2,
-    )
+    # plt.plot(
+    #     dummy_quantity,
+    #     roche_estimated_fluid,
+    #     color="y",
+    #     label="fluid satellite",
+    #     alpha=0.2,
+    # )
 
     #################
     #  RESTITUTION  #
     #################
 
-    # plt.xlim([np.min(quantity), np.max(quantity)])
+    # plt.xlim([np.min(quantity)-0.02, np.max(quantity)+0.02])
+    # plt.ylim(bottom = np.min(closest_distance)-.1e5)
 
-    # plt.xlabel("Coefficient of restitution", fontsize=13)
+    # plt.xlabel("Coefficient of restitution", fontsize=15)
 
     # plt.title(
-    #     "Effect of coefficient of restitution of a comet on its\n Roche limit (wrt Jupiter) as produced by pkdgrav",
-    #     fontsize=13,
+    #     "Effect of coeff. of restitution of a comet on its Roche\nlimit (wrt Jupiter) as produced by pkdgrav",
+    #     fontsize=15,
     # )
 
     #######################
     #  ADD LEGEND & SAVE  #
     #######################
 
-    plt.legend(loc="best", fontsize="small")
+    plt.xticks(fontsize=13)
+    plt.yticks(fontsize=13)
+    plt.legend(
+        bbox_to_anchor=(0, 1.20, 1, 0.2),
+        loc="lower left",
+        mode="expand",
+        borderaxespad=0,
+        ncol=2,
+    )
     plt.savefig("./roche_limit_plot.png", format="png", dpi=150, bbox_inches="tight")
 
 
